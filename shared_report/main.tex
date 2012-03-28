@@ -1,13 +1,17 @@
 \documentclass{article}
-\newcommand{\sharedReport}{}
-\input{\sharedReport preamble}
+
 \usepackage[numbers]{natbib}
 \usepackage{comment}
-\bibliographystyle{plainnat}
+\usepackage{url}
+
+\newcommand{\sharedReport}{}
+
+\input{\sharedReport preamble}
 
 \begin{document}
-\input{introduction}
-
-
+\sharedInput{introduction}
+\sharedInput{methods}
+\sharedInput{related_work}
+\bibliographystyle{plainnat}
 \bibliography{bib}
 \end{document}
