@@ -68,7 +68,7 @@ To complete a phase some document must be created to be used in the following ph
 These document can vary from an architectural design document to pseudo code.
 
 \subsection{Choosing a Development Method}
-The following list shows the characteristics of this project that will be used to determine the development method which should be used.
+The following list shows the characteristics of this project that will be used to determine the development method which should be used. \todo{Disse skal forklares mere uddybende, med 2 linjer hver.}
 \begin{enumerate}
 	\item 14 persons in four groups \label{enum:groupSize}
 	\item Diverse target group (students, supervisors, and secretaries/administrative personnel) \label{enum:targetGroup}
@@ -84,6 +84,7 @@ The following list shows the characteristics of this project that will be used t
 \end{enumerate}
 Barry Boehm and Richard Turn has identified five factors that can be used to determine whether to use a traditional or agile development method \citep{boehmTurner}.
 These factors are: Personnel, dynamism, size, culture, and criticality.
+
 In short, the personnel factor covers the composition of personnel based on the on the \textit{extended Cockburn method skill rating scale}, where people are divided into five categories based on the methodological skills, namely levels -1, 1b, 1a, 2, and 3.
 Dynamism is the anticipated percentage of changes in requirements that will occur during the project.
 The size is simply the number of people in the development team.
@@ -95,7 +96,7 @@ This is based on the Cockburn Scale used to differentiate between Crystal method
 A polar chart showing the factors for our project is seen in Figure~\ref{fig:developmentFactors}.
 As seen, must of the points are closer to the center than the periphery, this indicates that an agile method is preferred over a traditional one.
 
-The personnel score is positioned in the middle because we consider ourselves above level 1b, but none or very few of us qualify as level 2 or three.
+The personnel score is positioned in the middle because we consider ourselves above level 1b, but none or very few of us qualify as level 2 or 3.
 
 
 We will use a development approach similar to Scrum of Scrums.
@@ -113,10 +114,10 @@ This is also supported by point \ref{enum:passed}, because the end product is a 
 The features cut may then be suggested to the group which is to take up this project next year.
 
 
-\subsubsection{Refining SCRUM}
+\subsubsection{Refining SCRUM} 
 As point \ref{enum:manager} and \ref{enum:onsite} states, we have neither a project manager nor an available on-site customer.
 We will handle the missing on-site customer by having shorter iterations and contacting the customers whenever an iteration is over.
-Scrum of Scrums dictates that there should be a Scrum master in each subgroup.
+Scrum of Scrums\todo{kilde om hvad sos er} dictates that there should be a Scrum master in each subgroup.
 Since none of us has used Scrum before, none of us are qualified to be Scrum master.
 We are in an educational situation (see point \ref{enum:education}) so we will strive to allow every member to try to be Scrum master for a shorter time period.
 This may not be ideal, but we consider it to be more important that every member of the subgroups tries to have the responsibility of a Scrum master than having only one member trying it and learning it well.
@@ -151,7 +152,7 @@ A few of us have been using Hg and none of us have used Git, which leads us to c
 
 \subsubsection{Bug Tracking}
 We need to have some way of communicating and tracking the defects or ``bugs'' that we will run into during our project.
-The must important requirement for the tool we will use is that it should be able to track the bugs and make them easily available to the team that will continue on this project next year.
+The most important requirement for the tool we will use is that it should be able to track the bugs and make them easily available to the team that will continue on this project next year.
 The tools that we are considering to use for bug tracking are Bugzilla \cite{bugzillaFeat} and Eventum \cite{eventumFeat}.
 These tools are very similar in their sets of features.
 When a bug is discovered a bug report must be added in the tool.
@@ -177,7 +178,7 @@ We use both tools such that we and the group that is to take up this project nex
 The test tool that we want to use should be easily adapted by us, which leads us to look at tools using PHP, since that is the language we will be using to develop this project.
 We also want the tests to survive after our work on the project ends, in particular the groups that is to take up this project next year should be able to use our test cases again.
 We will be using the build in testing framework of Moodle \cite{moodletest}, which is based on SimpleTest \cite{simpletest}.
-This should ensure that the test cases can be used next year as well and perhaps be part of the final product, should it ever be released to the public.
+This should ensure that the test cases can be used next year as well and perhaps be part of the final product, should it be released to the public.
 
 
 
