@@ -33,10 +33,10 @@ An iteration should not be planned until right before the start of it.
 At the start of it the onsite customer should help prioritize which features should be implemented in the given iteration and the programmers estimate the time to implement them.
 This process is called ``Iteration planning game''.
 
-\paragraph{Scrum} \todo{Mangler kilder til hele scrum delen}
+\paragraph{Scrum}
 Scrum is an agile development method that utilizes a number of iterations of development cycles.
 These development cycles are known as sprints.
-A sprint usually has a length of a few weeks.
+A sprint usually has a length of 30 calendar days~\ref{Larman04}.
 A sprint backlog is created prior to the sprint. 
 This backlog consists of the features, ordered by priority, that should be implemented during the sprint.
 During the sprint the sprint backlog cannot be changed.
@@ -47,7 +47,7 @@ There should be a product owner, whose task is to meet the costumer's and end us
 These interests should be formalized and prioritized in the product backlog.
 There is also a scrum master. 
 A scrum master serves as a link between the development team and any external individuals.
-It is the scrum master's task to ensure that the development team is not disturbed.
+It is the scrum master's task to ensure that the development team is not disturbed~\ref{Larman04}.
 The development team is usually small, and their task is to design, analysis, and implement the features from the backlogs.
 Every day the scrum team holds a short meeting where they say what they have done since the preceding meeting, what they plan on doing the present day, and any problems they are having.
 
@@ -55,15 +55,28 @@ A variant of Scrum for more teams is called Scrum of Scrums or Large Scrum.
 In such a project there is one complete team consisting of several smaller sub-teams, that will hold Scrum of Scrum meetings during each sprint to synchronize their work.
 The Scrum of Scrum meeting is similar to the daily Scrum meeting with a representative from each sub-team, except that they talk about what the sub-teams has done and should do instead of what individuals have done and should do.
 
-\paragraph{Waterfall} \todo{Bestem hvilken waterfall metode vi vil beskrive}
+\paragraph{Waterfall}
 A project following the Waterfall method is divided into a number of phases.
-The number of phases in a Waterfall development process is not exact.\todo{Beskriv en bestem metode}
-Depending on the person asked more or less phases may be suggested e.g. Marry Poppendieck\todo{brug evt denne version af waterfall} is referring to six phases; software concept, requirements analysis, architectural design, detailed design, coding and debugging, and system test \cite{Poppendieck00}.
-Waterfall is strictly traditional, since it in its pure form does not allow to move ``backwards'' in the life cycle.
+The number of phases in a Waterfall development process is not exact.
+%Depending on the person asked more or less phases may be suggested e.g. Marry Poppendieck\todo{brug evt denne version af waterfall} is referring to six phases; software concept, requirements analysis, architectural design, detailed design, coding and debugging, and system test \cite{Poppendieck00}.
+One version of the waterfall model defined at~\citep{Parekh11} divides the waterfall model into six phases:
+
+\begin{itemize}
+	\item \textbf{Requirement gathering and analysis} - The initial phase where all possible requirements are gathered from the end-user of the system. Their validity and the possibility to implement them is analyzed. The result of the phase is a requirement specification document for use in the next phase.
+	\item \textbf{System design} - Based on the requirements a design for the system is constructed. The result is a system design specification document.
+	\item \textbf{Implementation and unit testing} - Based on the design document the system is divided into modules and units. The coding is started in this phase. Upon completion every unit is tested.
+	\item \textbf{Integration and system testing} - All the developed units are combined into the final system. The integration of the units is tested, and the complete system is tested as well. After a satisfiable ammount of tests have been conducted the system is delivered to the customer.
+	\item \textbf{Deployment} - Depending on the system some initial setup and configuration of the software might be necessary before end end-user can use the system. The result of this phased is a deployed system that is setup to the end-users needs.
+	\item \textbf{Operations and maintenance} - A theoretically never-ending phase. After the software is delivered issues might arise from practical use of the software and bugs might be discovered. When issues arise they are dealt with as long as the software is in use.
+\end{itemize}
+
+This method serves and example of the phases that a waterfall model can consist.
+
+Waterfall models are strictly traditional, since it in its pure form does not allow to move ``backwards'' in the life cycle.
 Where backwards refer to moving back into a phase once the phase has been completed.
 This suggests a big and heavy up front design plan that is to be followed when finished.
 
-Waterfall is by the method requiring the most documentation, of the methods presented here.
+Waterfall is the method requiring the most documentation, of the presented methods.
 To complete a phase some document must be created to be used in the following phases.
 These document can vary from an architectural design document to pseudo code.
 
