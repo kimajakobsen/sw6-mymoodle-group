@@ -1,23 +1,65 @@
 \section{Initial Analysis}
-\begin{comment}
-In the preliminary phase of working with Electronic-learning (E-learning) it is important for us to ensure that we are in fact working with problems that are relevant in the E-learning and Problem Based Learning (PBL) fields of study, as we are aiming at improving the overall way that the chosen E-learning environment at Aalborg University (AAU), namely Moodle, supports PBL. Because AAU is renowned for its implementation of PBL, we do not have to look very far to find some of the leading experts in this field.
-\end{comment}
-The following section explains the architecture of our system and how we derived it. Based on discussion with members of the ELSA \cite{x} and repsentatives from MPBL \cite{y} we choose to make a virtual group room. We will also reason for the choice of the decomposistion of the grouproom.
+\label{sec:initialAnalysis}
+To determine how to improve Moodle to support MPBL we conducted two informal discussions with the ELSA department\cite{elsa}\todo{Hvis dette er det første sted elsa bliver nævnt så skal forkortelsen skrives ud, dette gælder også for mpbl} and the MPBL department\cite{mpbl}. This section will account for the results of the discussion and based on that how we decides to solve the problem explained in conceptual terms. A central discussion topic is introducing project groups\ref{} \todo{ref til der hvor der står noget om gruppearbejde, det står længere oppe i introen.} into Moodle and how they are to be used.     
 
-\subsection{Discussion with expert users}   
-We conductet a meeting with the following two departments. On both meeting we discussed which improvements we could make to Moodle in regards to PBL.  
+\subsection{Discussion with expert users}  
+\label{sub:expertUsers} 
+We conducted a meeting with the two departments mentioned above. On both meeting we discussed which improvements we could make to Moodle in regards to PBL.  
 
-\paragraph{ELSA}
-ELSA are responsiable for tecnical, organisational, and pedagogical support of Moodle\cite{elsa}. \todo{noter hvem der var tilstæde til mødet.}
-The following was present at the meeting: z,y,x
+\subsubsection{ELSA}
+\begin{itemize}
+	\item Type: Informal meeting
+	\item Participants:Lillian Buus, Marie Glasemann, Mads Peter Bach, and the E-Learning group \todo{ikke sikket mads deltog i dette møde.} \todo{hvordan laver man kilder på personer?}
+	\item Date: 06-02-12
+\end{itemize}
+ELSA is responsible for technical, organizational, and pedagogical support of Moodle\cite{elsa}. 
+However, the actual development on Moodle is outsourced to the different IT departments on the university. 
+ELSA receives all feature requests and is responsible for providing support to the departments of the university, therefore they have keen knowledge about the problems and shortcomings of Moodle. 
+We are only interested in improving Moodle in regard to PBL, therefore, we have chosen four subject that we deem are relevant to this project:
 
-other strucvture then courses, automatisering, studerende skal selv kunne vedligeholde gruppe rum, fælles filer
+\paragraph{Automation of input data} A template of a course are autocratically generated, this empty course now need to be populated with content this requires manual work. 
+The population of a course are primarily done by the administrative personal and the lectures. 
+ELSA wishes that this could be generated automatically based on central data, new features such as project groups should also be generated automatically.     
+\paragraph{Maintenance of data} Courses are, as mentioned above, maintained by the administrative personal and the lectures, likewise should group room be maintainable by the students. 
+\paragraph{Overview of data} When a person is enrolled to several courses, the task of finding and entering the course page becomes difficult. 
+ELSA wishes a new system\todo{kald det noget andet end et nyt system.} which renders a greater overview and ease the task of find the wanted item. 
+This problem could also occur if a person is a member of several project groups.
+\paragraph{Sharing of data} The ability to share files and relevant material is a central concern when engaged in project group work. ELSA furthermore wish to have more modular tools that are able to interact and share data.
+This could be the ability to share quiz question between courses. 
 
-\paragraph{MPBL}
+
+\subsubsection{MPBL}
+\begin{itemize}
+	\item Type: Informal meeting
+	\item Participants:Jette Egelund Holdgaard, Morten Mathiasen Andersen, and the E-Learning group
+	\item Date: 08-02-12
+\end{itemize}
+``Master in Problem Based Learning is a fully online and highly interactive e-Learning programme for faculty staff at institutions who want to change to Problem Based and Project Based Learning (PBL) ''\cite{mpbl}.
+At the department of MPBL they educate staff from other educational institutions in how to implement the Aalborg PBL model\ref{}\todo{det står længere oppe}. Moodle and other communications technologies are used in the education process. 
+The duration of the online education is 2$\frac{1}{2}$ year.
+To gain knowledge about how Moodle is used in professional and PBL context we conducted a meeting and discussed how Moodle can be improved to better support PBL. Again we choose four subject that we deem covers the wishes expressed by MPBL:
+
+\paragraph{Joining of tools}
+
+\paragraph{Nearness}
+\paragraph{Collaboration}
+\paragraph{Planning}
+
+
+
+
+MPBL explains that they are using Moodle as a part of their education but it does not support any functionality that aid PBL. 
+To facilitate the online education other technologies such as Skype\cite{skype} and Adobe Connect\cite{adobe} are used. MPBL wish that        
+
 virtuelt mødested (bruger skype lige nu), føgelsen af nærhed, mere projekt arbejde, mulighed for at kommentere på hinanden ting, mødeplanlægning, google docs funktionalitet , process styreing / planlægning, 
 
+\subsection{Virtual Grouproom}
 
 
+\begin{comment}
+In the preliminary phase of working with Electronic-learning (E-learning) it is important for us to ensure that we are in fact working with problems that are relevant in the E-learning and Problem Based Learning (PBL) fields of study, as we are aiming at improving the overall way that the chosen E-learning environment at Aalborg University (AAU), namely Moodle, supports PBL. 
+Because AAU is renowned for its implementation of PBL, we do not have to look very far to find some of the leading experts in this field.
+\end{comment}
 \begin{comment}
 To optian domain knowlage of how moodle and Aapbl works 
 Domain knowlage
