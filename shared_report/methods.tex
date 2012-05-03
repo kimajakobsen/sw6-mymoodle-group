@@ -85,17 +85,27 @@ These document can vary from an architectural design document to pseudo code.
 \label{subsec:choosingmethod}
 The following list shows the characteristics of this project that will be used to determine the development method which should be used. \todo{Disse skal forklares mere uddybende, med 2 linjer hver.}
 \begin{enumerate}
-	\item 14 persons in four groups \label{enum:groupSize}
-	\item Diverse target group (students, supervisors, and secretaries/administrative personnel) \label{enum:targetGroup}
-	\item No onsite costumer \label{enum:onsite}
-	\item Hard deadline \label{enum:deadline}
-	\item Pass on project \label{enum:passed}
-	\item Known framework and platform \label{enum:framework}
-	\item Education environment \label{enum:education}
-	\item Not full-time development \label{enum:halftime}
-	\item No manager/Project owner \label{enum:manager}
-	\item No shared working room \label{enum:room}
-	\item Low criticality \label{enum:criticality}
+	\item 14 persons in four groups \label{enum:groupSize}\\
+	This semester is divided into two major groups, one of which is working with Moodle. This semester has a group limit of four members therefore the Moodle project has been divided into four smaller projects.
+	\item Diverse target group (students, supervisors, and secretaries/administrative personnel) \label{enum:targetGroup}\\
+	\item No onsite costumer \label{enum:onsite}\\
+	Because this is a university project, there are no onsite customers, instead there are several contact persons such as supervisors, students and secretaries which test the product and come with feedback.
+	\item Hard deadline \label{enum:deadline}\\
+	Because this is a semester project there is a hard deadline, where the development has to end.
+	\item Pass on project \label{enum:passed}\\
+	This project is meant to be passed on to the students next year.
+	\item Known framework and platform \label{enum:framework}\\
+	The Moodle platform is well documented, making it easier to find help.
+	\item Education environment \label{enum:education}\\
+	Since this is a university project, we are working in an educational environment.
+	\item Not full-time development \label{enum:halftime}\\
+	Because this is a semester project there are also lectures beside the project, therefore the time for development is limited.
+	\item No manager/Product owner \label{enum:manager}\\
+	Because this is a semester project, there is no project manager or product owner like it would be in a real working environment.
+	\item No shared working room \label{enum:room}\\
+	Although this is a multi-project, we are divided in four groups each group with their own working room.
+	\item Low criticality \label{enum:criticality}\\
+	If the system fails the failure will not influence the real world much.
 \end{enumerate}
 Barry Boehm and Richard Turn has identified five factors that can be used to determine whether to use a traditional or agile development method \citep{boehmTurner}.
 These factors are: Personnel, dynamism, size, culture, and criticality.
@@ -132,7 +142,7 @@ The features cut may then be suggested to the group which is to take up this pro
 \subsubsection{Refining SCRUM} 
 As point \ref{enum:manager} and \ref{enum:onsite} states, we have neither a project manager nor an available on-site customer.
 We will handle the missing on-site customer by having shorter iterations and contacting the customers whenever an iteration is over.
-Scrum of Scrums\todo{kilde om hvad sos er} dictates that there should be a Scrum master in each subgroup.
+Scrum of Scrums\cite{scrumOfScrums} dictates that there should be a Scrum master in each subgroup.
 Since none of us has used Scrum before, none of us are qualified to be a Scrum master.
 We are in an educational situation (see point \ref{enum:education}) so we will strive to allow every member to try to be Scrum master for a shorter time period.
 This may not be ideal, but we consider it to be more important that every member of the subgroups tries to have the responsibility of a Scrum master than having only one member trying it and learning it well.
