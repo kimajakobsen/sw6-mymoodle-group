@@ -10,57 +10,50 @@ There exist several plugins to Moodle that enhance it in respect to PBL. We will
 
 
 \subsection{Learning Management Systems}
-The systems that will be examined are SharePoint LMS, Litmos LMS, and the e-portfolio system Mahara.
-We will examine how they handle students, courses, and the concept of groups independent of courses, if it is supported.
-The objective is to gain an understanding of how an extension to Moodle could be structured in a logical way, and which tools might be relevant to include in the system.
+In this section we will examine a number of existing LMSs.
+The systems that will be examined are \emph{SharePointLMS}, \emph{Litmos} and \emph{Mahara}.
+We will examine how they handle students, courses and the concept of groups.
+The objective is to gain an understanding of how an extension to Moodle could be structured, and which tools might be relevant to include in the system.
 
-\subsubsection{SharePoint LMS} \todo{De folgende 3 LMS's er skrevet meget subjektivt, fix it :D}
-Sharepoint \citep{sharepoint1,sharepoint2} is a LMS based on the Microsoft SharePoint platform. 
-It includes the basic elements of a LMS such as courses and the possibility to group them into semesters, assessment tools such as quizzes and assignment hand-in, as well as a variety of options for customizing course pages.
-In short it has all the basic functionalities and options for customization one would expect a LMS to have.
+\subsubsection{SharePointLMS}
+SharePointLMS \citep{sharepointlms} is an LMS based on the Microsoft SharePoint platform. 
+It offers the basic functionality of an LMS, such as course management, student assessment tools such as quizzes and course certificates, conference tools, document sharing etc.
 
-The interesting aspect of SharePoint is how it accommodates group- and problem based learning. 
-SharePoint has a feature known as group sub sites, which can be created on a course page.
-Within the sub group several functionalities can be enabled, such as a chat, an internal mail, a calendar, and an online conference tool for meetings.
-If Sharepoint were to be used for group-based PBL, it would be using these group sub-sites.
-The group sub-sites has a lot of the functionality one would expect to use when working in a group-based PBL environment.
-The issue is that projects and groups do not exist as a separate entity in the system, and have to be created as courses, which is a problem on the organizational level.
-
-In conclusion SharePoint supports a lot of the functionalities desired for problem based group work, but does not contain groups as an independent entity.
+In terms of PBL, SharePointLMS offers some relevant features, such as creation of groups.
+Within a group it is possible to enable features such as a chat, an internal mail, a calendar, and an online conference tool for meetings, which could be useful when working in a PBL context.
+The only drawback is that groups cannot be created as independent entities in the system, but have to be created in the context of a course.
+This does not fit well into the Aalborg PBL Model, where there is a clear distinction between courses projects.
 
 \subsubsection{Litmos}
-Litmos\citep{litmos} is a Lite LMS.
-A Lite LMS is a lightweight version of a LMS, meaning it contains less functionality and features than a ``standard'' LMS, and lesser, if any, support for add-ons.
-The consequence of Litmos being a Lite LMS is that besides courses and the normally associated features the system does not provide much else in terms teaching.
+Litmos \citep{litmos} is a lightweight LMS with a focus on being easy to use and set up.
+Its main features are creation of courses including multimedia content such as audio, assessment of students and surveys to gain feedback on courses.
 
-What makes Litmos interesting is that it supports groups as an independent entity.
-It is possible to create teams, as they are called, and even within teams to create sub-groups of the teams.
-As it is possible to assign teams to courses, this makes administration of the students in a PBL environment easy, as the students on a semester would be grouped into a team which is then assigned to the appropriate courses.
-The team would then be divided into sub-groups representing the individual project, and as there is an integrated mailing system and Skype is integrated the students within a group can easily use Litmos as a communication tool. 
-
-Litmos therefore provides a logical structure\todo{Jeg forstaar ikke, hvorfor er dette et logical structured?} of students in a PBL environment, however as the system is not designed specifically for PBL it still lacks some features you would normally desire, such as a shared calendar in the teams, and as it is a Lite LMS it lacks some of the organizational tools that might be desirable.
+In contrast to SharePointLMS, Litmos supports creation of groups as independent entities and even creation of groups within a group.
+A group can be assigned to a course, which could be utilized to model the way that courses and projects are structured at AAU.
+This would be achieved by creating one group containing all students on a given semester, and then assigning this group to the relevant courses.
+Within this group a number of sub-groups would be created, representing the project groups.
+Litmos has a built-in mailing system and is also integrated with Skype, which could be used to communicate within the groups.
 
 \subsubsection{Mahara}
-Mahara is not a LMS, however we deem it a possible tool for project management.
+Mahara \citep{mahara} is technically not an LMS, but a \emph{Personal Learning Environment} (PLE), meaning that it is more learner-centered, as opposed to LMSs, which are typically more institution-centered.
+However, Mahara still has some features which are relevant to PBL.
 
-Mahara provides functionality to upload and store both finished and unfinished items, and the finished items can be put into a virtual portfolio, which can then be shared with others.
-The aspect of Mahara relevant for PBL is its social networking feature, which allows users to maintain a list of friends, and create groups.
-Within the groups a private forum can be set up. 
-It is also possible to share files within a group.
 Mahara aims to be an online portal where students can share their work and be a member of communities within their area of interest.
 It does not, however, come with a built-in calendar, which makes planning of projects an issue when just using Mahara.
+Mahare compensates for this by providing a single-sign on bridge to Moodle, allowing users to access their Moodle accounts directly from Mahara without signing in again, and vice versa.
 
-It can be networked together\todo{Hvad betyder networked together? betyder det integreret? } with Moodle, and from Moodle 1.9 and onward single sign-on can be implemented between the two system.
-That means a user who signs onto Moodle can access his portfolio on Mahara through Moodle without additional login information being required.
+The aspect of Mahara relevant for PBL is its social networking feature, which allows users to maintain a list of friends and create groups.
+Within a group it is possible to create a private forum as well as share files.
 
-Overall while Mahara does provide a good platform for communication within project groups, but it lacks support for planning and coordinating the projects.
+Overall Mahara provides a good platform for communicating within project groups, but it lacks support for planning and coordinating the projects.
 
 \subsubsection{Comparison}
-None of the examined LMSs provide complete support for group oriented work.
-However they do provide a variety of functionalities, that if combined would provide the functionalities one would expect a PBL E-Learning system would support.
+None of the examined LMSs provide complete support for PBL.
+However, they do provide a variety of features, that if combined, would provide the functionality one would expect a PBL-oriented LMS to have.
+
 The group structure found in Litmos could easily be combined with the features found in SharePoint to create a portal where students could organize their group work.
-The functionalities typically provided in LMSs appear to be mostly forums, internal communication, and planning tools such as: An internal mail client, a shared calendar, and integrating tools such as Skype into the system.
-None of the examined systems consider the aspect of a supervisor a project group would have to communicate with.
+The functionalities typically provided in LMSs appear to be mostly forums, internal communication and planning tools.
+None of the examined systems consider the aspect of communicating with a supervisor.
 
 \subsection{Previous work}
 The work done on last years 6$^{th}$ semester will be examined with a focus on the method used and the requirements for developed the system. 
