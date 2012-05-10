@@ -1,13 +1,13 @@
-\section{Methods}\todo{Vær opmærksom på at dette afsnit nu ligger efter system statement. Valg af dev method skal derfor baseres på at det er godt til at lave vores system}
+\chapter{Methods}\todo{Vær opmærksom på at dette afsnit nu ligger efter system statement. Valg af dev method skal derfor baseres på at det er godt til at lave vores system}
 In this section we describe the development methods and the tools which are considered to be used in this project.
 A choice is given in both of these areas along with a reasoning for the choices.
 
-\subsection{Development Method}
+\section{Development Method}
 In this project we are four project groups working together.
 For this collaboration to work it is important that we have a common understanding of the development method we are using.
 Different development methods are presented here and a single one is chosen to be used in this project.
 
-\subsubsection{Considered Methods}
+\subsection{Considered Methods}
 We consider some traditional and agile development methods. 
 %A common division of development methods is into traditional and agile.
 In general, traditional methods follow a upfront planned plan, where every task is handled in a single unit and the result is not changed afterwards \cite[sec.~2.7]{Poppendieck00}.
@@ -19,7 +19,7 @@ Some methods can have characteristics from both categories.
 The development methods considered in this project are: Extreme Programming, Scrum, and Waterfall.
 These are presented shortly in the following.
 
-\paragraph{Extreme Programming}
+\subsubsection{Extreme Programming}
 Extreme Programming (XP) is an agile development method that consists of a series of 12 recommended core practices \cite[p.~137]{Larman04}.
 These include but are not limited to: Frequent refactoring, pair programming, and the whole team being together in one room.
 The core of XP is to find every practice that is considered good and taking it to the extreme, e.g. since code reviews are good, do them all the time through pair programming.
@@ -34,7 +34,7 @@ An iteration should not be planned until right before the start of it.
 At the start of it the onsite customer should help prioritize which features should be implemented in the given iteration and the programmers estimate the time to implement them.
 This process is called ``Iteration planning game''.
 
-\paragraph{Scrum}
+\subsubsection{Scrum}
 \label{par:scrum}
 Scrum is an agile development method that utilizes a number of iterations of development cycles.
 These development cycles are known as sprints.
@@ -57,7 +57,7 @@ A variant of Scrum for more teams is called Scrum of Scrums or Large Scrum.
 In such a project there is one complete team consisting of several smaller sub-teams, that will hold Scrum of Scrum meetings during each sprint to synchronize their work.
 The Scrum of Scrum meeting is similar to the daily Scrum meeting with a representative from each sub-team, except that they talk about what the sub-teams has done and should do instead of what individuals have done and should do.
 
-\paragraph{Waterfall}
+\subsubsection{Waterfall}
 A project following the Waterfall method is divided into a number of phases.
 The number of phases in a Waterfall development process is not exact.
 %Depending on the person asked more or less phases may be suggested e.g. Marry Poppendieck\todo{brug evt denne version af waterfall} is referring to six phases; software concept, requirements analysis, architectural design, detailed design, coding and debugging, and system test \cite{Poppendieck00}.
@@ -82,7 +82,7 @@ Waterfall is the method requiring the most documentation, of the presented metho
 To complete a phase some document must be created to be used in the following phases.
 These document can vary from an architectural design document to source code.
 
-\subsection{Choosing a Development Method}
+\section{Choosing a Development Method}
 \label{subsec:choosingmethod}
 The following list shows the characteristics of this project that will be used to determine the development method which should be used.
 \begin{enumerate}
@@ -141,7 +141,7 @@ This is also supported by point \ref{enum:passed}, because the end product is a 
 The features cut may then be suggested to the group which is to take up this project next year.
 
 
-\subsubsection{Refining SCRUM} 
+\subsection{Refining SCRUM} 
 As point \ref{enum:manager} and \ref{enum:onsite} states, we have neither a project manager nor an available on-site customer.
 We will handle the missing on-site customer by having shorter iterations and contacting the customers whenever an iteration is over.
 Scrum of Scrums\cite{scrumOfScrums} dictates that there should be a Scrum master in each subgroup.
@@ -162,12 +162,12 @@ There is more:
 \end{comment}
 
 
-\subsection{Tools}\label{subsec:tools}
+\section{Tools}\label{subsec:tools}
 A series of tools are used in creation of this project.
 These tools are briefly described in this section.
 The tools that needs to be chosen must indeed complete some task, the tasks that needs a tool are: Version control, bug tracking, code documentation, and testing.
 
-\subsubsection{Version Control}
+\subsection{Version Control}
 All of us have been using subversion (SVN) in previous projects as the version controlling system.
 SVN is a centralized solution \cite{subversion} with a single repository that the group members can update from and commit changes to.
 This project does, however, differ from previous project with respect to the organization of groups; we are not one group of $x$ individuals, but rather one group consisting of some smaller subgroups, again consisting of individual persons.
@@ -177,7 +177,7 @@ The solutions considered are the distributed systems Git and Mercurial (Hg).
 These systems are quite similar and the essential difference is that Hg is simpler than Git and Git is more flexible than Hg \cite{gitVsHg}.
 A few of us have been using Hg and none of us have used Git, which leads us to choose Hg, such that we a little knowledge of the chosen system.
 
-\subsubsection{Bug Tracking}
+\subsection{Bug Tracking}
 We need to have some way of communicating and tracking the defects or ``bugs'' that we will run into during our project.
 The most important requirement for the tool we will use is that it should be able to track the bugs and make them easily available to the team that will continue on this project next year.
 The tools that we are considering to use for bug tracking are Bugzilla \cite{bugzillaFeat} and Eventum \cite{eventumFeat}.
@@ -189,7 +189,7 @@ Since we have used Bugzilla as part of the course Test and Verification, it will
 Furthermore, development of Eventum seem to be discontinued since the start of 2009 \cite{eventumDiscont}, which means that any defects that may be in the system are very unlikely to be fixed.
 In conclusion we choose to use Bugzilla to track our bugs.
 
-\subsubsection{Code Documentation}
+\subsection{Code Documentation}
 %We want our documentation of our code to be as close to the code as possible.
 %In particular we do not want to go back and forth between the source code and some other program when we are writing new functionality and documenting it.
 We do not wish to use a tool that requires us to type in documentation externally from the code.
@@ -201,7 +201,7 @@ The difference between the two tools is that PHPDocumentor focus on giving a mor
 We use both tools such that we and the group that is to take up this project next year can choose the documentation they prefer.
 
 
-\subsubsection{Testing}
+\subsection{Testing}
 The test tool that we want to use should be easily adapted by us, which leads us to look at tools using PHP, since that is the language we will be using to develop this project.
 We also want the tests to survive after our work on the project ends, in particular the groups that is to take up this project next year should be able to use our test cases again.
 We will be using the build in testing framework of Moodle \cite{moodletest}, which is based on SimpleTest \cite{simpletest}.
