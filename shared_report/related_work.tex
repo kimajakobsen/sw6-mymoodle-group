@@ -1,0 +1,102 @@
+\section{Related work}
+We are not the first to undertake the task of implementing support for PBL and group-oriented work in an \textit{LMS}. 
+As Moodle is not the only LMS, it is relevant to examine other LMSs to gain an understanding of how they typically are structured. 
+Similarly they might provide inspiration for developing a new system.
+The software that the students from last year worked on, was of the same topic, and it is equally relevant to examine their results and extract key points.
+There exist several plugins to Moodle that enhance it in respect to PBL. 
+We will compare the most promising of these plugins and conclude if they can be used.
+
+\subsection{Related Research}
+Related research in the field of PBL and how it is used by students can help improve our understanding of how students like to work and which PBL-related features they might want in a LMS.
+A relevant paper, \textit{Facilitating Adoption of Web Tools for Problem and Project Based Learning Activities} by Md. Saifuddin Khalid, Nikorn Rongbutsri and Lillian Buus \citep{khalidRongbutsriBuus}, outlines common PBL activities along with technologies frequently used in context with the activities.
+Table 3 \todo{læg $http://vbn.aau.dk/files/62455944/Facilitating_Adoption_In_PBL_Activities.pdf$ i bilag??} in this paper is used as reference to find the most prominent features of the technologies, in order to provide a better understanding of behavior of the students related to PBL.
+
+The activies are sharing, discussing, reading, presenting, writing, communicating, reflecting, argumenting and diagramming.
+From the technologies mapped to the sharing activity, it can be seen that the most prominent features to implement in our Moodle plugin are \textit{file sharing} (Dropbox, Youtube, Flickr, Box.net), \textit{knowledge sharing} (Zotero, Facebook, Digg, etc) and \textit{remote desktop access} (LogMeIn, TeamViewer).
+
+For the discussing activity the most prominent features are some form of a \textit{discussion facility} (Facebook, LinkedIn, Skype, etc), such as a chat room or a discussion forum in order for discussions to be conducted real-time or asynchronously.
+The reading activity only has Google mapped to it.
+A feature used for reading could be \textit{a list of common resources} managed by the students, making it easy for the students to access and share knowledge resources among each other.
+
+The presenting activity has Prezi and Google Docs mapped to it. The most prominent feature is as such a \textit{presentation tool}.
+For example, the students could use a presentation tool to collaboratively create a slide show presentation.
+
+For the writing activity the most prominent feature is some sort of a \textit{text editor} or \textit{word processor} (Google Docs, Typewith.me, MS Office with Dropbox), which can be used by the students collaboratively and synchronized in real-time.
+The documents produced with this feature could be stored in the LMS via the file sharing feature related to the sharing activity.
+
+The most prominent features of the technologies mapped to the communicating activity, the reflecting activity and the argumenting activity are the same as in the discussing activity.
+The diagramming activity has Gliffy, Diagramly and Dabbleboard mapped to it.
+The most prominent feature of these technologies is a \textit{diagram tool}.
+For example, students could use the diagram tool to collaboratively create diagrams, models or other illustrative drawings.
+
+Table 2 in the paper mentions other PBL project work activities along with the most frequently used technologies.
+Some of the most prominent features of the technologies listed in this table, and not already mentioned in this section, are a \textit{mind map tool} (Mindmap, Mindmeister, Google Docs, etc), a \textit{calendar/planning tool} (Google Calendar, Doodle, Basecamp) and a \textit{survey tool} (Surveyexact.dk, Google Docs).
+
+
+\subsection{Learning Management Systems}
+In this section we will examine a number of existing LMSs.
+The systems that will be examined are \emph{SharePointLMS}, \emph{Litmos} and \emph{Mahara}.
+We will examine how they handle students, courses, and the concept of groups.
+The objective is to gain an understanding of how an extension to Moodle could be structured, and which tools might be relevant to include in the system.
+
+\subsubsection{SharePointLMS}
+SharePointLMS \citep{sharepointlms} is an LMS based on the Microsoft SharePoint platform. 
+It offers the basic functionality of an LMS such as course management, student assessment tools such as quizzes and course certificates, conference tools, and document sharing etc.
+
+In terms of PBL, SharePointLMS offers some relevant features, such as creation of groups.
+Within a group it is possible to enable features such as a chat, an internal mail, a calendar, and an online conference tool for meetings, which could be useful when working in a PBL context.
+The only drawback is that groups cannot be created as independent entities in the system, but have to be created in the context of a course.
+This does not fit well into the Aalborg PBL Model, where there is a clear distinction between courses and projects.
+
+\subsubsection{Litmos}
+Litmos \citep{litmos} is a lightweight LMS with a focus on being easy to use and set up.
+Its main features are creation of courses including multimedia content such as audio, assessment of students, and surveys to gain feedback on courses.
+
+In contrast to SharePointLMS, Litmos supports creation of groups as independent entities and even creation of groups within a group.
+A group can be assigned to a course, which could be utilized to model the way courses and projects are structured at AAU.
+This would be achieved by creating one group containing all students on a given semester, and then assigning this group to the relevant courses.
+Within this group a number of sub-groups would be created, representing the project groups.
+Litmos has a built-in mailing system and is also integrated with Skype, which could be used to communicate within the groups.
+
+
+\subsubsection{Mahara}
+Mahara \citep{mahara} is technically not an LMS, but a \emph{Personal Learning Environment} (PLE), meaning that it is more learner-centered, as opposed to LMSs, which are typically more institution-centered.
+However, Mahara still has some features, which are relevant to PBL.
+
+Mahara aims to be an online portal where students can share their work and be a member of communities within their area of interest.
+It does not, however, come with a built-in calendar, which makes planning of projects an issue when just using Mahara.
+Mahare compensates for this by providing a single-sign on bridge to Moodle, allowing users to access their Moodle accounts directly from Mahara without signing in again, and vice versa.
+
+The aspect of Mahara relevant for PBL is its social networking feature, which allows users to maintain a list of friends and create groups.
+Within a group it is possible to create a private forum as well as share files.
+
+Overall Mahara provides a good platform for communicating within project groups, but it lacks support for planning and coordinating the projects.
+
+\subsubsection{Comparison}
+None of the examined LMSs provide complete support for PBL.
+However, they do provide a variety of features, that if combined, would provide the functionality one would expect a PBL-oriented LMS to have.
+
+The group structure found in Litmos could easily be combined with the features found in SharePoint to create a portal where students could organize their group work.
+The functionalities typically provided in LMSs appear to be mostly forums, internal communication and planning tools.
+None of the examined systems consider the aspect of communicating with a supervisor.
+
+\subsection{Previous work}
+During the spring semester of 2011 a group of students at AAU were given the task of solving a problem similar to ours. 
+They were to develop an LMS as a multi-project consisting of four groups, with the goal of fulfilling the needs of the students and faculty of AAU.
+However, the solution they developed was created from the ground up, unlike our solution, which is an extension of an existing system.
+Furthermore, the focus of the earlier project was on developing a solution which would fulfill the needs of teachers and student in relation to their courses, whereas our project focuses on developing a solution to better facilitate PBL. 
+
+Despite the differences between our project and theirs, we concluded that it would be beneficial for us to examine their development methods and try to learn from their experience, as the multi-project approach, target group analysis and product testing aspects still remain highly relevant for us. 
+
+We examined the following reports: \emph{E-LMS - Authentication, Database, and Educator} \cite{E-LMS-ADE},  \emph{E-Learning Mangement System : Implementing Customisable Schedules} \cite{E-LMS-ICS} and \emph{E-LMS - Administration, Calendar, Model, Education, Courses} \cite{E-LMS-ACMEC}.
+
+The following is a list of relevant and interesting observations that the groups made in their reports:
+\begin{itemize}
+	\item{Each group was allowed to pick their own development method, which lead to problems later in the development process as some groups used an agile development method, while others took a traditional approach. 
+	Integration testing became a problem as the groups were not synchronized and were always in differing stages of their development process. 
+	Agreeing on a shared development method would have been better.}
+	\item{Each group sent a representative to meet with representatives from other groups at least once every fortnight, where each representative presented their progress since the previous meeting. 
+	As these meetings were primarily for status updates, very little coordination between the groups took place.}
+	\item{Every month there would be a large meeting where all the students and supervisors were present and the current status of the system was presented.}
+\end{itemize}
+
