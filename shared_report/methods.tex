@@ -1,5 +1,5 @@
 \chapter{Methods}\todo{Vær opmærksom på at dette afsnit nu ligger efter system statement. Valg af dev method skal derfor baseres på at det er godt til at lave vores system}
-In this section we describe the development methods and the tools which are considered to be used in this project.
+In this section we describe the development methods and the tools, which are considered to be used in this project.
 A choice is given in both of these areas along with a reasoning for the choices.
 
 \section{Development Method}
@@ -10,8 +10,9 @@ Different development methods are presented here and a single one is chosen to b
 \subsection{Considered Methods}
 We consider some traditional and agile development methods. 
 %A common division of development methods is into traditional and agile.
-In general, traditional methods follow a upfront planned plan, where every task is handled in a single unit and the result is not changed afterwards \cite[sec.~2.7]{Poppendieck00}.
-This is inspired by the construction industry, where these methods originate.
+In general, traditional methods follow an upfront planned plan, where every task is handled in a single unit and the result is not changed afterward \cite[sec.~2.7]{Poppendieck00}.
+This method is inspired by the construction industry from which it originates.
+
 Projects using agile methods are developed in iterations, where some part of the product is developed in every iteration \cite[p.~25]{Larman04}.
 This should help cope with the changes that the end users or customer might pose during the development.
 
@@ -27,11 +28,11 @@ Kent Beck, the creator of XP, states that in general all the practices of XP sho
 
 There are roles assigned to different people involved in the project \cite[p.~145]{Larman04}.
 These roles are: Customer, programmer, tester, coach, tracker, consultant.
-All these roles are important, but Larman stresses the need for an onsite customer or at least an onsite customer proxy \cite[p.~152-156]{Larman04}.
+All these roles are important, but Larman stresses that an on-site customer or at least an on-site customer proxy is needed \cite[p.~152-156]{Larman04}.
 
 When using XP, the development is to progress in iterations of one to three weeks each.
 An iteration should not be planned until right before the start of it.
-At the start of it the onsite customer should help prioritize which features should be implemented in the given iteration and the programmers estimate the time to implement them.
+At the start of the sprint the on-site customer should help prioritize which features should be implemented in the given iteration and the programmers estimate the time to implement them.
 This process is called ``Iteration planning game''.
 
 \subsubsection{Scrum}
@@ -50,66 +51,75 @@ These interests should be formalized and prioritized in the product backlog.
 There is also a scrum master. 
 A scrum master serves as a link between the development team and any external individuals.
 It is the scrum master's task to ensure that the development team is not disturbed~\cite{Larman04}.
-The development team is usually small, and their task is to design, analysis, and implement the features from the backlogs.
+The development team is usually small, and their task is to design, analyze, and implement the features from the backlogs.
 Every day the scrum team holds a short meeting where they say what they have done since the preceding meeting, what they plan on doing the present day, and any problems they are having.
 
 A variant of Scrum for more teams is called Scrum of Scrums or Large Scrum.
-In such a project there is one complete team consisting of several smaller sub-teams, that will hold Scrum of Scrum meetings during each sprint to synchronize their work.
+In such a project there is one complete team consisting of several smaller sub-teams that will hold ongoing Scrum of Scrum meetings during each sprint to synchronize their work.
 The Scrum of Scrum meeting is similar to the daily Scrum meeting with a representative from each sub-team, except that they talk about what the sub-teams has done and should do instead of what individuals have done and should do.
 
 \subsubsection{Waterfall}
 A project following the Waterfall method is divided into a number of phases.
-The number of phases in a Waterfall development process is not exact.
+The number of phases in a Waterfall development process is varies from implementations.
 %Depending on the person asked more or less phases may be suggested e.g. Marry Poppendieck\todo{brug evt denne version af waterfall} is referring to six phases; software concept, requirements analysis, architectural design, detailed design, coding and debugging, and system test \cite{Poppendieck00}.
 One version of the waterfall model defined at~\citep{Parekh11} divides the waterfall model into six phases:
 
 \begin{itemize}
-	\item \textbf{Requirement gathering and analysis} - The initial phase where all possible requirements are gathered from the end-user of the system. Their validity and the possibility to implement them is analyzed. The result of the phase is a requirement specification document for use in the next phase.
-	\item \textbf{System design} - Based on the requirements a design for the system is constructed. The result is a system design specification document.
-	\item \textbf{Implementation and unit testing} - Based on the design document the system is divided into modules and units. The coding is started in this phase. Upon completion every unit is tested.
-	\item \textbf{Integration and system testing} - All the developed units are combined into the final system. The integration of the units is tested, and the complete system is tested as well. After a satisfiable ammount of tests have been conducted the system is delivered to the customer.
-	\item \textbf{Deployment} - Depending on the system some initial setup and configuration of the software might be necessary before end-user can use the system. The result of this phased is a deployed system that is setup to the end-users needs.
-	\item \textbf{Operations and maintenance} - A theoretically never-ending phase. After the software is delivered issues might arise from practical use of the software and bugs might be discovered. When issues arise they are dealt with as long as the software is in use.
+	\item \textbf{Requirement gathering and analysis} - The initial phase where all possible requirements are gathered from the end-user of the system.
+	Their validity and the possibility to implement them is analyzed.
+	The result of the phase is a requirement specification document which is used in the next phase.
+	\item \textbf{System design} - Based on the requirements a design for the system is constructed. 
+	The result is a system design specification document.
+	\item \textbf{Implementation and unit testing} - Based on the design document the system is divided into modules and units. 
+	The coding is started in this phase. 
+	Upon completion every unit is tested.
+	\item \textbf{Integration and system testing} - All the developed units are combined into the final system. 
+	The integration of the units is tested, and the complete system is tested as well. 
+	After a satisfiable number of tests have been conducted the system is delivered to the customer.
+	\item \textbf{Deployment} - Depending on the system some initial setup and configuration of the software may be necessary before end-user can use the system. 
+	The result of this phase is a deployed system that is set up to the end-user's needs.
+	\item \textbf{Operations and maintenance} - A theoretically never-ending phase. 
+	After the software is delivered issues may arise from practical use of the software and bugs may be discovered. 
+	When issues arise they are dealt with as long as the software is in use.
 \end{itemize}
 
-This method serves and example of the phases that a waterfall model can consist.
+Waterfall models are strictly traditional, since it in its pure form does not allow to move back to a phase once the next is started.
+This suggests a big and heavy up-front design plan that is to be followed until the project is finished.
 
-Waterfall models are strictly traditional, since it in its pure form does not allow to move ``backwards'' in the life cycle.
-Where backwards refer to moving back into a phase once the phase has been completed.
-This suggests a big and heavy up front design plan that is to be followed until the project is finished.
-
-Waterfall is the method requiring the most documentation, of the presented methods.
+Of the presented methods Waterfall is the method that requires the most documentation.
 To complete a phase some document must be created to be used in the following phases.
-These document can vary from an architectural design document to source code.
+These documents can vary from an architectural design document to source code.
 
 \section{Choosing a Development Method}
 \label{subsec:choosingmethod}
-The following list shows the characteristics of this project that will be used to determine the development method which should be used.
+The following list shows the characteristics of this project, which will be used to determine the development method for the project.
 \begin{enumerate}
 	\item \textbf{Four groups with 14 persons} \label{enum:groupSize}\\
-	This semester is divided into two major groups, one of which is working with Moodle. This semester has a group limit of four members therefore the Moodle project has been divided into four smaller projects.
+	This semester is divided into two major groups, one of which is working with Moodle. 
+	This semester has a group limit of four members therefore the Moodle project has been divided into four smaller projects.
 	\item \textbf{Diverse target group} \label{enum:targetGroup}\\ 
 	The relevant target group is: Students, supervisors, and secretaries/administrative personnel 
-	\item \textbf{No onsite costumer} \label{enum:onsite}\\
-	Because this is a university project, there are no onsite customers, instead there are several contact persons such as supervisors, students and secretaries which test the product and come with feedback.
+	\item \textbf{No on-site costumer} \label{enum:onsite}\\
+	Because this is a university project, there are no on-site customers. 
+	Instead there are several contact persons such as supervisors, students, and secretaries, which test the product and come with feedback.
 	\item \textbf{Hard deadline} \label{enum:deadline}\\
 	Because this is a semester project the project must be complete when the semester ends.
 	\item \textbf{Pass on project} \label{enum:passed}\\
 	This project will be passed on to the students next year.
 	\item \textbf{Known framework and platform} \label{enum:framework}\\
-	The Moodle platform is well documented, making it easier to find help.
+	The Moodle platform is open source, and some documentation is available on most relevant topics.
 	\item \textbf{Education environment} \label{enum:education}\\
 	Since this is a university project, we are working in an educational environment.
 	\item \textbf{Not full-time development} \label{enum:halftime}\\
 	Because this is a semester project there are also lectures beside the project, therefore the time for development is limited. 
 	\item \textbf{No manager/Product owner} \label{enum:manager}\\
-	Because this is a semester project, there is no project manager or product owner like it would be in a real working environment.
+	Because this is a semester project, there is no project manager or product owner like there would be in a real working environment.
 	\item \textbf{No shared working room} \label{enum:room}\\
 	Although this is a multi-project, we are divided in four groups but not located in the same room.
 	\item \textbf{Low criticality} \label{enum:criticality}\\
-	If the system fails it will effect the comfort of the users.
+	If the system fails it will affect the comfort of the users.
 \end{enumerate}
-Barry Boehm and Richard Turn has identified five factors that can be used to determine whether to use a traditional or agile development method \citep{boehmTurner}.
+Barry Boehm and Richard Turn have identified five factors that can be used to determine whether to use a traditional or agile development method \citep{boehmTurner}.
 These factors are: Personnel, dynamism, size, culture, and criticality.
 
 In short, the personnel factor covers the composition of personnel based on the \textit{extended Cockburn method skill rating scale}, where people are divided into five categories based on the methodological skills, namely levels -1, 1b, 1a, 2, and 3.
@@ -117,7 +127,8 @@ Dynamism is the anticipated percentage of changes in requirements that will occu
 The size is simply the number of people in the development team.
 The culture factor is a scale of how much the team prefers chaos over order.
 Criticality is a scale of how much a system failure will influence the real world.
-This is based on the Cockburn Scale used to differentiate between Crystal methods.
+This is based on the Cockburn Scale used to differentiate between Crystal methods~\cite{Larman04}.
+\todo{find kapitel med crystal methods og lav en præcis reference}
 \sharedInput{polar_chart}
 
 A polar chart showing the factors for our project is seen in Figure~\ref{fig:developmentFactors}.
