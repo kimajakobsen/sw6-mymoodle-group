@@ -7,11 +7,39 @@ There exist several plugins to Moodle that enhance it in respect to PBL.
 We will compare the most promising of these plugins and conclude if they can be used.
 
 \section{Related Research}
+\label{sec:research}
 Related research in the field of PBL and how it is used by students can help improve our understanding of how students like to work and which PBL-related features they might want in a LMS.
+ 
 A relevant paper, \textit{Facilitating Adoption of Web Tools for Problem and Project Based Learning Activities} by Md. Saifuddin Khalid, Nikorn Rongbutsri and Lillian Buus \citep{khalidRongbutsriBuus}, outlines common PBL activities along with technologies frequently used in context with the activities.
-Table 3 \todo{læg $http://vbn.aau.dk/files/62455944/Facilitating_Adoption_In_PBL_Activities.pdf$ i bilag??} in this paper is used as reference to find the most prominent features of the technologies, in order to provide a better understanding of behavior of the students related to PBL.
 
-The activies are sharing, discussing, reading, presenting, writing, communicating, reflecting, argumenting and diagramming.
+We choose this paper because it is written by a PhD students from Aalborg university and have high relevance to our project. This paper was recommended by Thomas Ryberg\cite{thomas}. We will now summarize the relevant parts of the report.  
+
+\begin{figure}		
+\begin{tabular}{|p{3cm}|p{0.66\textwidth}|}
+\hline
+Common activities & Technologies \\ \hline
+Sharing & Dropbox, Zotero, Diigo, Youtube, Facebook, Flickr, twitter, Blogger, Delicious, Digg, Box.net, Slideshare, LogMeIn, 
+TeamViewer, LogMeIn  \\ \hline
+Discussing & Facebook,LinkedIn, Skype, MSN, Yahoo messenger, twitter, Blogger, Doodle, SignAppNow, Mahara, Moodle, Quickr, Adobe Connect, Lectio.dk, Microsoft OneNote, FirstClass \\ \hline
+Reading & Google \\ \hline
+Presenting & Prezi, Google docs \\ \hline
+Writing & Google docs, Typewith.me, MS Office with Dropbox \\ \hline
+Communicating & Facebook, LinkedIn, Youtube, Flickr Skype, MSN, Yahoo messenger, twitter, Blogger, Doodle, SignAppNow, Mahara, Moodle, Quickr, Adobe connet, Lectio.dk, Microsoft OneNote, FirstClass \\ \hline
+Reflecting & Facebook, LinkedIn, Youtube, Flickr Skype, MSN, Yahoo messenger, twitter, Blogger, Moodle, Mahara, FirstClass \\ \hline
+Argumentation & Facebook, LinkedIn, Youtube, Flickr, Skype, MSN, Yahoo messenger, twitter, Blogger, Mahara, Email, Microsoft OneNote, FirstClass \\ \hline
+Diagramming & Gliffy, Diagramly, Dabbleboard \\ \hline
+
+\end{tabular}
+\caption{Samples of tools mapped to PBL common activities. This table is from~\cite{khalidRongbutsriBuus}   }
+\label{tab:figure3}
+\end{figure}
+
+
+This paper is used as reference to find the most prominent features of the technologies, in order to provide a better understanding of behavior of the students related to PBL.
+
+The following is based on figure~\ref{tab:figure3}.
+
+The activities are sharing, discussing, reading, presenting, writing, communicating, reflecting, Argumentation and diagramming.
 From the technologies mapped to the sharing activity, it can be seen that the most prominent features to implement in our Moodle plugin are \textit{file sharing} (Dropbox, Youtube, Flickr, Box.net), \textit{knowledge sharing} (Zotero, Facebook, Digg, etc) and \textit{remote desktop access} (LogMeIn, TeamViewer).
 
 For the discussing activity the most prominent features are some form of a \textit{discussion facility} (Facebook, LinkedIn, Skype, etc), such as a chat room or a discussion forum in order for discussions to be conducted real-time or asynchronously.
@@ -32,7 +60,7 @@ For example, students could use the diagram tool to collaboratively create diagr
 Table 2 in the paper mentions other PBL project work activities along with the most frequently used technologies.
 Some of the most prominent features of the technologies listed in this table, and not already mentioned in this section, are a \textit{mind map tool} (Mindmap, Mindmeister, Google Docs, etc), a \textit{calendar/planning tool} (Google Calendar, Doodle, Basecamp) and a \textit{survey tool} (Surveyexact.dk, Google Docs).
 
-\section{Learning Management Systems}
+\section{Learning Management Systems}\label{sec:LMS}
 In this section we will examine a number of existing LMSs.
 The systems that will be examined are \emph{SharePointLMS}, \emph{Litmos} and \emph{Mahara}.
 We will examine how they handle students, courses, and the concept of groups.
@@ -52,9 +80,9 @@ Litmos \citep{litmos} is a lightweight LMS with a focus on being easy to use and
 Its main features are creation of courses including multimedia content such as audio, assessment of students, and surveys to gain feedback on courses.
 
 In contrast to SharePointLMS, Litmos supports creation of groups as independent entities and even creation of groups within a group.
-A group can be assigned to a course, which could be utilized to model the way courses and projects are structured at AAU.
-This would be achieved by creating one group containing all students on a given semester, and then assigning this group to the relevant courses.
-Within this group a number of sub-groups would be created, representing the project groups.
+A group can be assigned to a course, which could be utilized to model the way courses are structured at AAU.
+This could be achieved by creating one group containing all students on a given semester, and then assigning this group to the relevant courses.
+Within this group a number of sub-groups would be created, representing project groups.
 Litmos has a built-in mailing system and is also integrated with Skype, which could be used to communicate within the groups.
 
 
