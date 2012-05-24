@@ -1,0 +1,62 @@
+\chapter{System Definition}
+\label{sec:systemDef}
+\label{chap:systemDef}
+Based on our \nameref{sec:problemDef}, \nameref{sec:initialAnalysis}, and \nameref{chap:relatedwork}, we define \system{} as follows:
+
+\sharedInput{system_definition}
+
+\section{Decomposing \system}
+\label{sub:decomposingSys}
+The project that we are undertaking is rather large.
+This leads us to decompose it into smaller sub-projects.
+This also makes sense with respect to the context that the project is being conducted, namely an educational context where we are to work in one large group divided into smaller sub-groups. 
+Each sub-group will have its own sub-project, whose goal is to make a given sub-system, integrate it with the other sub-systems, and write a report to document the process~\cite{sw6studieordning}.
+
+The final system, as defined above, should enable PBL in Moodle.
+We will divide the system into sub-systems in accordance with core principles of Aalborg PBL as defined in Section \ref{sub:aaupbl}.
+The following core principles we feel are relevant to this project are:
+
+\begin{itemize}
+	\item Project organization
+  \item Participant direction
+  \item Team-based approach
+  \item Collaboration and feedback
+\end{itemize}
+
+These principles are important for the system, and they are all important for each sub-system.
+However, each sub-system has a different priority of the different core principles.\todo{mangler der stadig ikke noget om hvordan vi har valgt netop denne opdeling?~kim}
+Each sub-system along with their relation to the core principles will now be described.
+
+%We choose not to take initiative to implement or support problem orientation and integration of theory and practice.
+%The reason for this is that ensuring the two principles is close impossible to do i an information system.
+%Ensuring such principles can, however, be aided by allowing the supervisor of a group to give feedback to to the group about such matters, provided that the supervisor can help ensure these principles.
+%The four sub-systems we choose to implement are described below.
+%The actual sub-system definitions are presented in the individual sub-project part of this report in Section~\ref{sec:subSysDef}. \todo{så kan alle lave sådan et label i deres rapport}
+
+\subsubsection{\timelinegroup{}} %timeline
+The students can plan the way they want to organize their projects themselves.
+This sub-system is responsible for allowing students to make a schedule for a project and assign tasks to students.
+A student that is participating in several projects concurrently should be able to get an collective overview of his schedule.\todo{timeline gruppe: overholder i det her, eller skal det skrives om, så det passer}
+This also corresponds to the request made by ELSA to allow sharing of data described in Section~\ref{sub:elsaInterview}, along with the planning request made by MPBL department in Section~\ref{sub:mpblInterview}.
+
+\subsubsection{\blackboardgroup{}} %blackboard
+During a project, the participants must be able to communicate and thereby direct the course of their project.\todo{if they most do this then a ref or cite is missing!}
+The communication must be persistent, such that the participants can use their communication as documentation should it be needed.\todo{need cite or ref}
+In Section~\ref{sub:mpblInterview} MPBL describes that they will like to have better collaboration between students in Moodle.
+%This is a key objective of this sub-system.
+
+\subsubsection{\administrationgroup{}} %adm
+\label{sec:admgroupdecom}
+A project group is a team of students working on a project.
+It should be possible for students and their supervisors to work together on a project.%, and deny access for people who are not associated with the project.
+%This sub-system should consider the request for overview of data made by ELSA.
+%Although not changing the way courses are shown, the overview of a students or supervisors projects must allow for easy navigation.
+It should be possible to create and manage project groups in a simple and intuitive manner.
+The nearness request made by the MPBL department in Section~\ref{sub:mpblInterview} should also be satisfied in this sub-system by giving participants of a project a virtual meeting place.
+
+\subsubsection{\supervisorgroup{}} %supervisor
+The participants must be able to communicate and receive feedback from their supervisor.
+Students should be able to give feedback to projects, provided that the participants of the project allows it.
+As with the Participant direction sub-system, this sub-system should cover the MBPL departments request for collaboration.
+
+
