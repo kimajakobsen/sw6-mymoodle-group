@@ -1,12 +1,17 @@
 \chapter{Related Work}
 \label{chap:relatedwork}
-We are not the first to undertake the task of implementing support for PBL and group-oriented work in an \textit{LMS}. 
-As Moodle is not the only LMS, it is relevant to examine other LMSs to gain an understanding of how they typically are structured. 
-Similarly they might provide inspiration for developing a new system.
-The software that the students from last year worked on, is of the same topic, and it is equally relevant to examine their results and extract key points.
-There exist several plugins to Moodle that enhance it in respect to PBL. 
+We are not the first to undertake the task of implementing support for the Aalborg PBL model in an LMS. 
+As Moodle is not the only LMS, it is relevant to examine other LMSs to gain an understanding of how they are typically structured. 
+These may provide inspiration for developing a new system.
+The project that the students from last year worked on is on the same topic, and it is equally relevant to examine their results and extract key points.
+There exist several plugins to Moodle that enhance it in respect to the Aalborg PBL model.
 We will compare the most promising of these plugins and conclude if they can be used.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
 \section{Related Research}
 \label{sec:research}
 Related research in the field of PBL and how it is used by students can help improve our understanding of how students like to work and which PBL-related features they might want in a LMS.
@@ -61,20 +66,30 @@ For example, students could use the diagram tool to collaboratively create diagr
 Table 2 in the paper mentions other PBL project work activities along with the most frequently used technologies.
 Some of the most prominent features of the technologies listed in this table, and not already mentioned in this section, are a \textit{mind map tool} (Mindmap, Mindmeister, Google Docs, etc), a \textit{calendar/planning tool} (Google Calendar, Doodle, Basecamp) and a \textit{survey tool} (Surveyexact.dk, Google Docs).
 
+
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
 \section{Learning Management Systems}\label{sec:LMS}
 In this section we will examine a number of existing LMSs.
-The systems that will be examined are \emph{SharePointLMS}, \emph{Litmos} and \emph{Mahara}.
+The systems that will be examined are SharePointLMS, Litmos and Mahara.
 We will examine how they handle students, courses, and the concept of groups.
 The objective is to gain an understanding of how an extension to Moodle could be structured, and which tools might be relevant to include in the system.
 
-\subsection{SharePoint}
+\subsection{SharePointLMS}
 SharePointLMS \citep{sharepointlms} is an LMS based on the Microsoft SharePoint platform. 
-It offers the basic functionality of an LMS such as course management, student assessment tools such as quizzes and course certificates, conference tools, and document sharing etc.
+It offers the basic functionality of an LMS such as course management, student assessment tools such as quizzes and course certificates, conference tools, and document sharing.
 
 In terms of PBL, SharePointLMS offers some relevant features, such as creation of groups.
 Within a group it is possible to enable features such as a chat, an internal mail, a calendar, and an online conference tool for meetings, which could be useful when working in a PBL context.
 The only drawback is that groups cannot be created as independent entities in the system, but have to be created in the context of a course.
-This does not fit well into the Aalborg PBL Model, where there is a clear distinction between courses and projects.
+This does not fit well into the Aalborg PBL model, where there is a clear distinction between courses and projects.
 
 \subsection{Litmos}
 Litmos \citep{litmos} is a lightweight LMS with a focus on being easy to use and set up.
@@ -88,42 +103,42 @@ Litmos has a built-in mailing system and is also integrated with Skype, which co
 
 
 \subsection{Mahara}
-Mahara \citep{mahara} is technically not an LMS, but a \emph{Personal Learning Environment} (PLE), meaning that it is more learner-centered, as opposed to LMSs, which are typically more institution-centered.
-However, Mahara still has some features, which are relevant to PBL.
+Mahara \citep{mahara} is technically not an LMS, but a Personal Learning Environment (PLE), meaning that it is more learner-centered, as opposed to LMSs, which are typically more institution-centered.
+However, Mahara still has some features that are relevant to the Aalborg PBL model.
 
 Mahara aims to be an online portal where students can share their work and be a member of communities within their area of interest.
 It does not, however, come with a built-in calendar, which makes planning of projects an issue when just using Mahara.
-Mahare compensates for this by providing a single-sign on bridge to Moodle, allowing users to access their Moodle accounts directly from Mahara without signing in again, and vice versa.
+Mahara compensates for this by providing a single sign-on bridge to Moodle, allowing users to access their Moodle accounts directly from Mahara without signing in again, and vice versa.
 
-The aspect of Mahara relevant for PBL is its social networking feature, which allows users to maintain a list of friends and create groups.
+The aspect of Mahara relevant to the Aalborg PBL model is its social networking feature, which allows users to maintain a list of friends and create groups.
 Within a group it is possible to create a private forum as well as share files.
 
 Overall Mahara provides a good platform for communicating within project groups, but it lacks support for planning and coordinating the projects.
 
 \subsection{Comparison}
-None of the examined LMSs provide complete support for PBL.
+None of the examined LMSs provide complete support for the Aalborg PBL model.
 However, they do provide a variety of features, that if combined, would provide the functionality one would expect a PBL-oriented LMS to have.
 
-The group structure found in Litmos could easily be combined with the features found in SharePoint to create a portal where students could organize their group work.
+The group structure found in Litmos could be combined with the features found in SharePoint to create a portal where students could organize their group work.
 The functionalities typically provided in LMSs appear to be mostly forums, internal communication and planning tools.
 None of the examined systems consider the aspect of communicating with a supervisor.
 
-\section{Previous Work}
+\section{Relevant Student Reports}
 \label{sec:prevwork}
 During the spring semester of 2011 a group of students at AAU were given the task of solving a problem similar to ours. 
 They were to develop an LMS as a multi-project consisting of four groups, with the goal of fulfilling the needs of the students and faculty of AAU.
-However, the solution they developed was created from the ground up, unlike our solution, which is an extension of an existing system.
-Furthermore, the focus of the earlier project was on developing a solution which would fulfill the needs of teachers and student in relation to their courses, whereas our project focuses on developing a solution to better facilitate PBL. 
+However, the solution they developed was created from scratch, unlike our solution, which is an extension of an existing system.
+Furthermore, the focus of the earlier project was on developing a solution which would fulfill the needs of teachers and students in relation to their courses, whereas our project focuses on developing a solution to better facilitate PBL. 
 
-Despite the differences between our project and theirs, we concluded that it would be beneficial for us to examine their development methods and try to learn from their experience, as the multi-project approach, target group analysis and product testing aspects still remain highly relevant for us. 
+Despite the differences between our project and theirs, we conclude that it would be beneficial for us to examine their development methods and try to learn from their experience, as the multi-project approach, target group analysis, and product testing aspects still remain highly relevant for us. 
 
-We examined the following reports: \emph{E-LMS - Authentication, Database, and Educator} \cite{E-LMS-ADE},  \emph{E-Learning Management System : Implementing Customizable Schedules} \cite{E-LMS-ICS} and \emph{E-LMS - Administration, Calendar, Model, Education, Courses} \cite{E-LMS-ACMEC}.
+We examine the following reports: \emph{E-LMS - Authentication, Database, and Educator} \cite{E-LMS-ADE},  \emph{E-Learning Management System: Implementing Customizable Schedules} \cite{E-LMS-ICS} and \emph{E-LMS - Administration, Calendar, Model, Education, Courses} \cite{E-LMS-ACMEC}.
 
 The following is a list of relevant and interesting observations that the groups made in their reports:
 \begin{itemize}
 	\item{Each group was allowed to pick their own development method, which lead to problems later in the development process as some groups used an agile development method, while others took a traditional approach. 
 	Integration testing became a problem as the groups were not synchronized and were always in differing stages of their development process. 
-	Agreeing on a shared development method would have been better.}
+	Agreeing on a shared development method would have been preferable.}
 	\item{Each group sent a representative to meet with representatives from other groups at least once every fortnight, where each representative presented their progress since the previous meeting. 
 	As these meetings were primarily for status updates, very little coordination between the groups took place.}
 	\item{Every month there would be a large meeting where all the students and supervisors were present and the current status of the system was presented.}
