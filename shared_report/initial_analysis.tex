@@ -1,44 +1,48 @@
 \chapter{Initial Requirements}
 \label{sec:initialAnalysis}
-To determine how to improve Moodle to support PBL we conducted two informal discussions with E-L\ae{}ringssamarbejdet ved Aalborg Universitet (ELSA)~\cite{elsa} and the Master in Problem Based Learning (MPBL) department~\cite{mpbl} at Aalborg University.
-This section will account for the results of the discussion and based on that we decide how to solve the problem explained in conceptual terms.
-A central discussion topic is introducing team work in a project (see Section \ref{sub:aaupbl}) into Moodle and how they are to be used.
+To determine how to improve Moodle to support the Aalborg PBL model we conduct two informal discussions with E-L\ae{}ringssamarbejdet ved Aalborg Universitet (ELSA)~\cite{elsa} and the Master in Problem Based Learning (MPBL) department~\cite{mpbl} at Aalborg University.
+This section accounts for the results of the discussion and based on that we decide how to solve the problem explained in conceptual terms.
 
 \section{Discussion with Expert Users}  
 \label{sub:expertUsers} 
-We conducted a meeting with the two departments mentioned above. 
-In both meetings we discussed which improvements we could make to Moodle in regards to PBL.  
+We conducted meetings with ELSA and MPBL. 
+In both meetings we discussed which improvements we could make to Moodle in regards to the Aalborg PBL model.
 
 \subsection{ELSA}
 \label{sub:elsaInterview}
 \begin{itemize}
 	\item Type: Informal meeting
 	\item Participants: Lillian Buus~\cite{lillian}, Marie Glasemann~\cite{marie}, Mads Peter Bach~\cite{mads}, and us 
-	\item Date: 06-02-12
+	\item Date: February 6, 2012
 \end{itemize}
 ELSA is responsible for technical, organizational, and pedagogical support of Moodle.~\cite{elsa} 
 However, the actual development on Moodle is outsourced to the different IT departments on the university. 
 ELSA receives all feature requests and is responsible for providing support to the departments of the university, therefore they have keen knowledge about the problems and shortcomings of Moodle. 
-We are only interested in improving Moodle with regard to PBL, therefore we have chosen five subjects of those ELSA proposed that we deem are relevant to this project:
+We are only interested in improving Moodle in relation to the Aalborg PBL model, therefore we have chosen five subjects of those ELSA proposed that we deem are relevant to this project:
 
-\subsubsection{Automation of input data} A template of a course is autocratically generated, this empty course now needs to be populated with content; this requires manual work. 
+\subsubsection{Automation of input data} A course is automatically generated from a template. 
+This empty course now needs to be populated with content; this requires manual work. 
 The population of a course is primarily done by the administrative personnel and the lecturers. 
 ELSA would like that this could be generated automatically based on central data. 
-New features such as project groups should also be generated automatically.
+ELSA would prefer that new entities introduced by us were also generated automatically.
 
-\subsubsection{Maintenance of data} Courses are, as mentioned above, maintained by the administrative personal and the lecturers, likewise group rooms should be maintainable by the students.
+\subsubsection{Maintenance of data} Courses are, as mentioned above, maintained by the administrative personnel and the lecturers.%, likewise group rooms should be maintainable by the students.
+ELSA mentions that we should consider who should maintain the data introduced by features implemented by us.
+
 
 \subsubsection{Overview of data} When a person is enrolled to several courses, the task of finding and entering the course page becomes difficult. 
 ELSA would like a function in Moodle that renders a simpler overview, which eases the task of finding the wanted item.
-This problem could also occur if a person is a member of several project groups.
+%This problem could also occur if a person is a member of several project groups.
+We need to ensure that this problem does not occur in any features we develop.
 
 \subsubsection{Sharing of data} The ability to share files and relevant material is a central concern when engaged in project group work. 
-ELSA would also like to have more modular tools that enable interaction and sharing of data.
-This could also be the ability to share quiz question between courses. 
+%ELSA would also like to have more modular tools that enable interaction and sharing of data.
+ELSA would like that features were more general such that they could be used in different contexts.
+This could be the ability to share quiz question between courses. 
 
-\subsubsection{Archiving} Elsa currently archive all courses and the related material. 
-The archiving is done by closing all courses for enrollment and then copy all data to the Moodle installation. 
-This approach is not working very well, since student complains that they can not enroll or enroll from courses during the backup process. 
+\subsubsection{Archiving} ELSA currently archives all courses and the related material. 
+The archiving is done by closing all courses for enrollment and then copying all data from the Moodle installation. 
+This approach is not working very well, since students complain that they can not enroll or unenroll from courses during the backup process. 
 
 \subsection{MPBL}
 \label{sub:mpblInterview}
@@ -50,10 +54,10 @@ This approach is not working very well, since student complains that they can no
 The MPBL department defines themselves as:
 ``Master in Problem Based Learning is a fully online and highly interactive e-Learning programme for faculty staff at institutions who want to change to Problem Based and Project Based Learning (PBL)''.~\cite{mpbl}
 At the department of MPBL they educate staff from other educational institutions in how to conduct PBL.
-Moodle and other communications technologies are used in the education process. 
+Moodle and other communication technologies are used in the education process. 
 The duration of the online education is two and a half years.
 To gain knowledge about how Moodle is used in professional and PBL context we conducted a meeting and discussed how Moodle can be improved to better support PBL. 
-We chose to consider four of the subjects MPBL suggested:
+We choose to consider four of the subjects MPBL suggested:
 
 \subsubsection{Joining of tools} MPBL explains that they are using Moodle as a part of their education but it does not support any functionality that aids PBL. 
 To facilitate the online education other technologies such as Skype~\cite{skype} and Adobe Connect~\cite{adobe} are used. 
@@ -61,15 +65,15 @@ MPBL would like that the necessary tools are available in Moodle to avoid using 
 
 \subsubsection{Nearness} When working as a group it is an advantage to be in the same room.
 When that is impossible, which is often the case for MPBL, then tools must create the feeling of nearness. 
-A virtual meeting place made available could create the wanted feeling of nearness and thus be the foundation of working as a group is set.
+A virtual meeting place made available could create the wanted feeling of nearness and thus the foundation of working as a group is set.
 
 \subsubsection{Collaboration} Management and sharing of documents between the members of a group is a common issue. 
 There is a need in Moodle to better handle sharing of documents. 
 The ability to comment on documents are a common way to give feedback on other's work. 
-Currently document sharing is conducted via emails, Dropbox~\cite{dropbox}, or Google docs~\cite{googledocs}.
+Currently document sharing is conducted via emails, Dropbox~\cite{dropbox}, and Google docs~\cite{googledocs}.
 
 \subsubsection{Planning} When group members are geographically separated it is essential to coordinate and plan.
-MPBL would like that Moodle contains tool to plan the collaboration process.
+MPBL would like that Moodle contains a tool to plan the collaboration process.
 
 
 
