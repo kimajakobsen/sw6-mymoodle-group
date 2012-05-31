@@ -1,0 +1,68 @@
+\chapter{System Definition}
+\label{sec:systemDef}
+\label{chap:systemDef}
+Based on our \nameref{sec:problemDef}, \nameref{sec:initialAnalysis}, and \nameref{chap:relatedwork}, we define the system that we develop in this project, \system{}, as follows:
+
+\sharedInput{system_definition}
+
+Since \system{} is an extension it adds functionality, but does not change existing functionality.
+We do, however, allow changes to the user interface of \moodle{}.
+
+
+\section{Decomposing \system}
+\label{sub:decomposingSys}
+The project that we are undertaking is rather large.
+This leads us to decompose it into smaller sub-projects.
+This also makes sense with respect to the context that the project is being conducted, namely an educational context where we are to work in one large group divided into smaller \subgroup{}s. 
+Each \subgroup{} will have its own sub-project, whose goal is to make a given \subsystem{}, integrate it with the other \subsystem{}s, and write a report to document the process and the results~\cite{sw6studieordning}.
+
+The final system, as defined above, should enable PBL in Moodle.
+We will divide the system into \subsystem{}s to ensure that we cover the core principles of the Aalborg PBL model as defined in Section \ref{sub:aaupbl}.
+The following core principles we find relevant to this project are:
+
+\begin{itemize}
+    \item Project organization
+    \item Participant direction
+    \item Team-based approach
+    \item Collaboration and feedback
+\end{itemize}
+
+These principles are important for the system, and they are all important for each \subsystem{}.
+However, each \subsystem{} has a different priority of the different core principles.
+Notice that two of the core principles are not considered.
+These two, problem orientation and integration of theory and practice, are important concepts, but we do not believe that we can cover these in an LMS.
+These must be covered by the students themselves with guidance from their supervisor.
+
+There are several ways to decompose \system{} to integrate the core principles of the Aalborg PBL model in Moodle. 
+To support the principles of project organization and team-based approach we decide to implement the concept of project groups in Moodle. 
+One \subsystem{}, called \administrationgroup{}, implements this concept.
+To implement collaboration and feedback we need a tool for planning, a tool for collaboration between the members, and a tool for communication with the supervisor(s). 
+The principle of participant direction is implemented in general by all parts. 
+
+Each \subsystem{} is described in the following sections.
+
+\subsection{\administrationgroup{}} %adm
+\label{sec:admgroupdecom}
+A project group is a team of students working on a project.
+It should be possible for students and their supervisors to work together on a project.
+It should be possible to create and manage project groups in a simple and intuitive manner.
+The nearness request made by the MPBL department in Section~\ref{sub:mpblInterview} should be satisfied in this \subsystem{} by giving participants of a project a virtual meeting place.
+
+\subsection{\timelinegroup{}} %timeline
+\label{sec:tmlgroupdecom}
+The students can plan the way they want to organize their projects themselves.
+This \subsystem{} is responsible for allowing students to make a schedule for a project and assign tasks to students.
+A student that is participating in several projects concurrently should be able to get a collective overview of his schedule.
+This also corresponds to the request made by ELSA to allow sharing of data described in Section~\ref{sub:elsaInterview}, along with the planning request made by MPBL department in Section~\ref{sub:mpblInterview}.
+
+\subsection{\blackboardgroup{}} %blackboard
+During a project, the participants must be able to communicate and thereby direct the course of their project.
+The communication must be persistent, such that the participants can use their communication as documentation should it be needed.
+In Section~\ref{sub:mpblInterview} MPBL describes that they would like to have better collaboration between students in Moodle.
+
+\subsection{\supervisorgroup{}} %supervisor
+The participants must be able to communicate and receive feedback from their supervisor.
+Students should be able to give feedback to projects, provided that the participants of the project allow it.
+As with the \blackboardgroup{} \subsystem{}, this \subsystem{} should cover the MBPL departments request for collaboration.
+
+

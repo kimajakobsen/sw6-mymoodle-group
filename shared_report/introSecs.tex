@@ -1,0 +1,114 @@
+%Note: Lad vaere med at skrive e.g. i hver anden saetning.
+\chapter{Introduction}
+As computers are becoming a more integrated part of our lives, they are becoming more integrated with our educational system as well.
+Different educational methods are supported by different information communication systems called e-learning systems.
+This observation has lead us to investigate how the method of our university, the Aalborg Problem Based Learning (PBL) model, can be implemented into the e-learning system being used at our university, namely \moodle{}.
+
+This project is conducted as a multi-project, which means that \subgroup{}s will be working on sub-projects and these groups must work together to complete the whole project.
+This part of the report is shared among every \subgroup{} and contains the exact same content in every report.
+In this part ``we'' refers to all 14 members of the multi-project.
+
+\section{E-Learning}
+\label{sec:e-learning}
+The term e-learning covers all forms of electronically supported learning. 
+E-learning is often associated with distanced learning and out-of-classroom teaching, but can also be used to support traditional teaching in class rooms. 
+In short e-learning is defined as learning that is facilitated and supported via Information and Communications Technology (ICT). 
+The cooperation between the teachers and students and among the students themselves can similarly be partially or completely conducted via ICT~\cite{def-e-learning1}\cite{def-e-learning2}.
+
+At Aalborg University e-learning is employed in a variety of forms. 
+There are fully online courses taught in the Master of Problem Based Learning (MPBL) education~\cite{mpbl}, and regular courses that make use of online quizzes as a method of teaching.
+
+\subsection{Learning Management Systems}
+\label{sub:lms}
+E-learning is often conducted through the use of a Learning Management System (LMS). 
+An LMS is, loosely defined, as a software system, which administrates, tracks, and reports teaching. 
+It is considered robust if it contains the following functionality~\citep{Ellis09}:
+
+\begin{itemize}
+	\item Has centralized and automated administration.
+	\item Uses self-service and self-guided service.
+	\item Is able to assemble and deliver learning content rapidly.
+	\item Consolidates teaching activities on a scalable web-based platform.
+	\item Supports portability and standards.
+	\item Has the ability to personalize content and reuse knowledge.
+\end{itemize}
+
+LMSs have many forms each catered to a specific target groups.
+The general characteristics of an LMS are~\citep{Kerschenbaum}:
+
+\begin{itemize}
+	\item Student registration and administration.
+	\item Management of teaching events such as scheduling and tracking.
+	\item Management of curricula and obtained qualifications.
+	\item Management of skills and competencies (mostly for corporate use).
+	\item Reporting of grades and approved assignments.
+	\item Management of teaching records.
+	\item The ability to produce and share material relevant to courses.
+\end{itemize}
+
+The purpose of an LMS is to handle and administrate all study related activities at a learning institution.
+
+Moodle (Modular Object-Oriented Dynamic Learning Environment) \citep{moodle} is currently the primary e-learning platform at Aalborg University (AAU). 
+Its main purpose is to allow lecturers to share course-relevant material with students and to serve as a calendar service containing dates of lectures, meetings etc. 
+The problem is that Moodle does not support PBL, which is the learning method used at AAU.
+
+\section{The Aalborg PBL Model}
+\label{sub:aaupbl}
+The Aalborg PBL model is a term coined to describe AAU's problem based learning model. 
+It originates from the philosophy of the staff of the university. 
+They were interested in giving the students an active role in obtaining knowledge, as opposed to the lecture based learning method used at many universities.
+Furthermore, they wanted to give the faculties a more active role in the students' learning experience than what the lecture setting provided. 
+From this the Aalborg PBL Model was developed. 
+This section is based on~\citep{Barge10} with supplementary literature from \cite[pp.~9-16]{theaalborgpblmodel2004}.
+
+The Aalborg PBL model consists of six core principles, which outline the students' learning process. 
+These are:
+\begin{itemize}
+	\item \textbf{Problem orientation} - A problem relevant to the students' field of study that serves as the basis for their learning process.
+	\item \textbf{Project organization} - The project is the medium through which the students address the problem and achieve the knowledge outlined by the curriculum.
+	\item \textbf{Integration of theory and practice} - The curriculum and staff at the university are responsible for teaching the students to connect their project work to broader theoretical knowledge.
+	\item \textbf{Participant direction} - Students define their problem and make decisions relevant to the completion of the project themselves.
+	\item \textbf{Team-based approach} - Most of the students' project related work is conducted in groups of three or more students.
+	\item \textbf{Collaboration and feedback} - Peer and supervisor critique is used continuously throughout a project to improve the students' work.
+	The aim is for the students to gain the skills of collaboration, feedback, and reflection by following the Aalborg PBL model. 
+\end{itemize}
+From this point on we will use the term ``project group'' to describe a team of students working on a project in cooperation.
+
+
+\section{Moodle}
+Moodle is an e-learning platform for producing dynamic web sites for courses. 
+It is written in PHP and supports SQL databases for persistent storage.
+Moodle is originally developed by Martin Dougiamas in 2002 and is released under an open source license (GPLv3+) \citep{gpl}\cite{moodlelicense}. 
+It is currently maintained by a community of developers. 
+Due to its modular design, the functionality of Moodle can be extended with plugins developed by the Moodle community.
+
+Moodle is built around the concept of courses, and most activities in Moodle are centered around them. 
+Courses can be divided into categories.
+Topics, resources, activities, and blocks can be added to courses~\citep{moodleStructural}.
+Topics are an integrated part of courses, and resources can be links to external sources or uploaded files. 
+Both these elements are an integrated part of courses. 
+Activities and blocks are plugins, which can be added to a course to provide additional functionality. 
+An activity is added by placing a link on a page, where the functionality of the activity lies. 
+A block can be shown visually on the course page.
+An example of a Moodle course page can be seen in Figure~\ref{fig:MoodleCourse}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{\sharedReport moodle_page.png}
+\sharedcaption{A Moodle course page for the Test and Verification course}
+\label{fig:MoodleCourse}
+\end{figure}
+
+As Moodle is built around courses it does not provide much functionality to support the Aalborg PBL model discussed in Section~\ref{sub:aaupbl}.
+
+The individual groups will elaborate further on Moodle if needed.
+Based on the content described so far we define our problem in the following section.
+
+\section{Problem Definition}
+\label{sec:problemDef}
+The problem that this project is concerned with is the following:
+
+Moodle does not fully support the work method used at AAU.
+Moodle is built up strictly around courses, and does not contain the concept of project groups.
+To accommodate for this students must use different tools for project group work.
+This project deals with how support for the Aalborg PBL model can be implemented in Moodle.
+This involves researching other systems than Moodle for information on how they accommodate project groups, and conducting interviews with students and administrative personnel of different faculties to gather requirements for such an extension to Moodle.
