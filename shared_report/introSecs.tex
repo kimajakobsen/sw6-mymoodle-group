@@ -1,11 +1,11 @@
 %Note: Lad vaere med at skrive e.g. i hver anden saetning.
 \chapter{Introduction}
 As computers are becoming a more integrated part of our lives, they are becoming more integrated with our educational system as well.
-Different educational methods are supported by different information communication systems called e-learning systems.
+Different educational methods are supported by different information communication systems, called e-learning systems.
 This observation has lead us to investigate how the method of our university, the Aalborg Problem Based Learning (PBL) model, can be implemented into the e-learning system being used at our university, namely \moodle{}.
 
-Compared to the previous semesters, the bachelor project was differently structured, in that the goal of this project is to collaborate on a multi-group project. At the beginning of the semester two larger development projects were proposed, each of which were then divided into sub-projects. This meant that every ``\subgroup{}'' working on a larger project were supposed to work together towards creating a single system. The goal of the multi-project described in this report was to develop an extension for \moodle{}, which 14 students in total chose to do. The large multi-project was then divided into smaller sub-projects, with three to four students working on each sub-project. 
-This part of the report is shared among every \subgroup{} and contains the exact same content in every report.
+Compared to the previous semesters, the bachelor project was differently structured, since the goal of this project is to collaborate on a multi-group project. At the beginning of the semester two larger development projects were proposed, each of which were then divided into sub-projects. This meant that every ``\subgroup{}'' working on a larger project was supposed to work together towards creating a single system. The goal of the multi-project described in this report was to develop an extension for \moodle{}, which 14 students in total chose to do. The large multi-project was then divided into smaller sub-projects, with three to four students working on each sub-project. 
+This part of the report is shared among every \subgroup{} and contains the same content in every report.
 In this part ``we'' refers to all 14 members of the multi-project.
 
 \section{E-Learning}
@@ -13,10 +13,10 @@ In this part ``we'' refers to all 14 members of the multi-project.
 The term e-learning covers all forms of electronically supported learning. 
 E-learning is often associated with distanced learning and out-of-classroom teaching, but can also be used to support traditional teaching in class rooms. 
 In short e-learning is defined as learning that is facilitated and supported via Information and Communications Technology (ICT). 
-The cooperation between the teachers and students and among the students themselves can similarly be partially or completely conducted via ICT~\cite{def-e-learning1}\cite{def-e-learning2}.
+The cooperation between the teachers and students, and among the students themselves, can similarly be partially or completely conducted via ICT~\cite{def-e-learning1}\cite{def-e-learning2}.
 
 At Aalborg University e-learning is employed in a variety of forms. 
-There are fully online courses taught in the Master of Problem Based Learning (MPBL) education~\cite{mpbl}, and regular courses that make use of online quizzes as a method of teaching.
+There are fully online courses taught in the Master of Problem Based Learning (MPBL) education~\cite{mpbl}, and regular courses that make use of online quizzes, etc. as a method of teaching.
 
 \subsection{Learning Management Systems}
 \label{sub:lms}
@@ -33,7 +33,7 @@ It is considered robust if it contains the following functionality~\citep{Ellis0
 	\item Has the ability to personalize content and reuse knowledge.
 \end{itemize}
 
-LMSs have many forms each catered to a specific target groups.
+LMSs have many forms each suited to a specific target group.
 The general characteristics of an LMS are~\citep{Kerschenbaum}:
 
 \begin{itemize}
@@ -55,7 +55,7 @@ The problem is that Moodle does not support PBL, which is the learning method us
 \section{The Aalborg PBL Model}
 \label{sub:aaupbl}
 The Aalborg PBL model is a term coined to describe AAU's problem based learning model. 
-It originates from the philosophy of the staff of the university. 
+It originates from the philosophy of the university's staff. 
 They were interested in giving the students an active role in obtaining knowledge, as opposed to the lecture based learning method used at many universities.
 Furthermore, they wanted to give the faculties a more active role in the students' learning experience than what the lecture setting provided. 
 From this the Aalborg PBL Model was developed. 
@@ -65,8 +65,8 @@ The Aalborg PBL model consists of six core principles, which outline the student
 These are:
 \begin{itemize}
 	\item \textbf{Problem orientation} - A problem relevant to the students' field of study that serves as the basis for their learning process.
-	\item \textbf{Project organization} - The project is the medium through which the students address the problem and achieve the knowledge outlined by the curriculum.
-	\item \textbf{Integration of theory and practice} - The curriculum and staff at the university are responsible for teaching the students to connect their project work to broader theoretical knowledge.
+	\item \textbf{Project organization} - The project is the medium through, which the students address the problem and achieve the knowledge outlined by the curriculum.
+	\item \textbf{Integration of theory and practice} - The staff at the university is responsible for teaching the students to connect their project work to broader theoretical knowledge via the curriculum.
 	\item \textbf{Participant direction} - Students define their problem and make decisions relevant to the completion of the project themselves.
 	\item \textbf{Team-based approach} - Most of the students' project related work is conducted in groups of three or more students.
 	\item \textbf{Collaboration and feedback} - Peer and supervisor critique is used continuously throughout a project to improve the students' work.
@@ -82,14 +82,14 @@ It is written in PHP and supports SQL databases for persistent storage.
 Moodle is originally developed by Martin Dougiamas in 2002 and is released under an open source license (GPLv3+) \citep{gpl}\cite{moodlelicense}. 
 It is currently maintained by a community of developers. 
 Due to its modular design, the functionality of Moodle can be extended with plugins developed by the Moodle community.
+The version of Moodle that we have decided to use is Moodle version 2.2.
 
-Moodle is built around the concept of courses, and most activities in Moodle are centered around them. 
+Moodle is built around the concept of courses, and most activities in Moodle are centered around them.
 Courses can be divided into categories.
 Topics, resources, activities, and blocks can be added to courses~\citep{moodleStructural}.
-Topics are an integrated part of courses, and resources can be links to external sources or uploaded files. 
-Both these elements are an integrated part of courses. 
-Activities and blocks are plugins, which can be added to a course to provide additional functionality. 
-An activity is added by placing a link on a page, where the functionality of the activity lies. 
+Topics are an integrated part of courses, and resources can be links to external sources or uploaded files.
+Activities and blocks are plugins, which can be added to a course to provide additional functionality.
+An activity is added by placing a link on a course page to where the functionality of the activity lies.
 A block can be shown visually on the course page.
 An example of a Moodle course page can be seen in Figure~\ref{fig:MoodleCourse}
 
