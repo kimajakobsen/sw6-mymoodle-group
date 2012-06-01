@@ -1,45 +1,44 @@
 \chapter{Methods \& Tools}
-In this chapter we describe the development methods and the tools, which are considered to be used in this project.
-A choice is given for tools and development methods along with a reasoning for the choices.
+In this chapter we describe the development methods and tools, which are considered for use in this project.
+A choice is made for tools and development methods along with a reasoning for the choices.
 
 \section{Development Method}
 \label{sec:devMethod}
-In this project we are four project groups working together.
+In this project we are four groups working together.
 For this collaboration to work it is important that we have a common understanding of the development method we are using.
-The groups that were developing an LMS last year used different development methods, which gave them problems during development of their product (see Section~\ref{sec:prevwork}).
-Different development methods are presented here and a single one is chosen to be used in this project.
+The groups that were developing an LMS last year used different development methods, which caused problems, see Section~\ref{sec:prevwork}.
+Different development methods are presented here and one is chosen to be used in this project.
 
 \subsection{Considered Methods}
-We consider some traditional and agile development methods.
+We consider a selection of traditional and agile development methods.
 In general, traditional methods follow an upfront planned schedule, where every task is handled in a single unit and the result is not changed afterwards~\cite[sec.~2.7]{Poppendieck00}.
-This method is inspired by the construction industry from where it originates.
+This method is inspired by the methods used in the construction industry.
 
 Projects using agile methods are developed in iterations, where some part of the product is developed in every iteration \cite[p.~25]{Larman04}.
-This should help cope with the changes that the \euser{}s or customers might pose during the development.
+This should help adapt to the changes that the \euser{}s or customers might pose during the development.
 
-Some methods can have characteristics from both categories.
+Some methods can have characteristics from both agile and traditional.
 The development methods considered in this project are: Extreme Programming, \scrum{}, and Waterfall.
-These are presented shortly in the following section.
+These are presented in the following sections.
 
 \subsubsection{Extreme Programming}
-Extreme Programming (XP) is an agile development method that consists of a series of 12 recommended core practices~\cite[p.~137]{Larman04}.
+Extreme Programming (XP) is an agile development method that consists of 12 recommended core practices~\cite[p.~137]{Larman04}.
 These include, but are not limited to: Frequent refactoring, pair programming, and the whole team working together in a single room.
 The core of XP is to find every practice that is considered good and taking it to the extreme, e.g. since code reviews are good, do them all the time through pair programming.
 Kent Beck, the creator of XP, states that in general all the practices of XP should be applied because they compensate and support each other~\cite[p.~156-157]{Larman04}.
 
 There are roles assigned to different people involved in the project~\cite[p.~145]{Larman04}.
-These roles are: Customer, programmer, tester, coach, tracker, and consultant.
-All these roles are important, but Larman stresses that an on-site customer or at least an on-site customer proxy is needed~\cite[p.~152-156]{Larman04}.
+These roles are: customer, programmer, tester, coach, tracker, and consultant.
+All these roles are important, but Larman, the author of~\cite{Larman04}, stresses that an on-site customer or at least an on-site customer proxy is needed~\cite[p.~152-156]{Larman04}.
 
-When using XP, the development is to progress in iterations of one to three weeks each.
+When using XP, the development is done in iterations of one to three weeks each.
 An iteration should not be planned until right before the start of it.
 At the start of the iteration the on-site customer should help prioritize which features should be implemented in the given iteration and the programmers estimate the time to implement them.
 This process is called ``Iteration planning game''.
 
 \subsubsection{Scrum}
 \label{par:scrum}
-This section describes the agile development method \scrum{}.
-The knowledge of \scrum{} is from~\cite[chap.~7,pp.~109-136]{Larman04}.
+This section describes the agile development method \scrum{}, and is based on~\cite[chap.~7,pp.~109-136]{Larman04}.
 \Scrum{} is, as XP, an agile development method that utilizes a number of iterations of development cycles.
 These development cycles are known as sprints.
 A sprint usually has a length of 30 calendar days.
@@ -48,7 +47,7 @@ This backlog consists of the features, ordered by priority, that should be imple
 The sprint backlog cannot be changed during the sprint.
 If some of the features in the sprint backlog are not implemented during the sprint they are moved to the \productbacklog{}, which is a list of the features that should be implemented in the future.
 
-In \scrum{} there are different roles. 
+In \scrum{} there are different roles.
 There should be a product owner, whose task is to meet the costumer's and \euser{}s' interests. 
 These interests should be formalized and prioritized in the \productbacklog{}.
 There is also a \scrummaster{}. 
@@ -68,7 +67,7 @@ One version of the waterfall model defined at~\cite{Parekh11} divides the waterf
 
 \begin{itemize}
 	\item \textbf{Requirement gathering and analysis} - The initial phase where all possible requirements are gathered from the \euser{}s of the system.
-	Their validity and the possibility to implement them is analyzed.
+	Their validity and whether their implementation is feasible is analyzed.
 	The result of the phase is a requirement specification document, which is used in the next phase.
 	\item \textbf{System design} - Based on the requirements a design for the system is constructed. 
 	The result is a system design specification document.
@@ -87,7 +86,7 @@ One version of the waterfall model defined at~\cite{Parekh11} divides the waterf
 \end{itemize}
 
 Waterfall models are strictly traditional, since it in its pure form does not allow to move back to a phase once the next is started.
-This suggests a big and heavy up-front design plan that is to be followed until the project is finished.
+This suggests a big and heavy upfront design plan that is to be followed until the project is finished.
 
 Of the presented methods Waterfall is the method that requires the most documentation.
 To complete a phase some document must be created to be used in the following phases.
@@ -98,34 +97,35 @@ These documents can vary from an architectural design document to source code.
 The following list shows the characteristics of this project, which will be used to determine the development method for the project.
 \begin{enumerate}
 	\item \textbf{Four groups (14 persons in total)} \label{enum:groupSize}\\
-	This semester is divided into two major groups, one of which is working with Moodle. 
-	This semester at AAU has a group limit of four members therefore the Moodle project has been divided into four smaller projects.
+	This semester the students are divided into two major groups, one of which is working with Moodle. 
+	This semester at AAU has a group limit of four members therefore the Moodle project has been divided into four \subgroup{}s.
 	\item \textbf{Diverse target group} \label{enum:targetGroup}\\ 
-	The relevant target groups are: Students, supervisors, and administrative personnel 
+	The relevant target groups are: students, supervisors, and administrative personnel 
 	\item \textbf{No on-site costumer} \label{enum:onsite}\\
 	Because this is a university project, there are no on-site customers. 
-	Instead there are several contact persons such as supervisors, students, and administrative personnel, which test the product and provide feedback.
+	Instead there are several contact persons such as supervisors, students, and administrative personnel, who test the product and provide feedback.
 	\item \textbf{Hard deadline} \label{enum:deadline}\\
-	Because this is a semester project the project must be completed when the semester ends.
+	Because this is a semester project the project must be handed in when the semester ends.
 	\item \textbf{Pass on project} \label{enum:passed}\\
 	This project will be passed on to next year's students.
 	\item \textbf{Known framework and platform} \label{enum:framework}\\
-	The Moodle platform is open source, and some documentation is available on most relevant topics.
+	The Moodle platform is open source, and documentation is available on most relevant topics.
 	\item \textbf{Education environment} \label{enum:education}\\
 	Since this is a university project, we are working in an educational environment.
 	\item \textbf{Not full-time development} \label{enum:halftime}\\
-	Because this is a semester project there are also lectures beside the project, therefore the time for development is limited. 
-	\item \textbf{No manager/\Productowner{}} \label{enum:manager}\\
+	Because this is a semester project there are lectures beside the project, therefore the development time is limited. 
+	\item \textbf{No manager/\productowner{}} \label{enum:manager}\\
 	Because this is a semester project, there is no project manager or \productowner{} like there would be in a corporate environment.
 	\item \textbf{No shared working room} \label{enum:room}\\
 	We do not have a room available where all four groups can work simultaneously.
 	\item \textbf{Low criticality} \label{enum:criticality}\\
 	If the system fails it will only affect the comfort of the users.
 \end{enumerate}
-Barry Boehm and Richard Turn have identified five factors that can be used to determine whether to use a traditional or agile development method \citep{boehmTurner}.
-These factors are: Personnel, dynamism, size, culture, and criticality.
+Barry Boehm and Richard Turn, authors of~\citep{boehmTurner}, have identified five factors that can be used to determine whether to use a traditional or agile development method.
+These factors are: personnel, dynamism, size, culture, and criticality.
 
-The personnel factor covers the composition of personnel based on the \textit{extended Cockburn method skill rating scale}, where people are divided into five categories based on the methodological skills, namely levels -1, 1b, 1a, 2, and 3~\cite[p.~34]{boehmTurner}.
+The personnel factor covers the composition of personnel based on the \textit{extended Cockburn method skill rating scale}, where people are divided into five categories based on their methodological skills.
+The methodological skills are divided into five levels: -1, 1b, 1a, 2, and 3~\cite[p.~34]{boehmTurner}.
 The levels of the extended Cockburn scale are defined as follows:
 A person with level -1 is unable or unwilling to follow a shared development method.
 With training a person with level 1b can perform procedural development method steps such as writing a function while conforming to coding standards.
@@ -150,8 +150,9 @@ The personnel score is positioned in the middle because we consider ourselves ab
 
 We will use a development approach similar to \sos{}.
 The reason for this is three-fold.
-First of all we have a diverse target group (item \ref{enum:targetGroup}), which may make a big up front analysis and design difficult.
-This leads us to choose an agile method due to ``I know it when I see it'' (IKIWISI), that is the customer does not know what she wants before she sees it.
+First of all we have a diverse target group (item \ref{enum:targetGroup}), which may make a big upfront analysis and design difficult.
+This lead us to choose an agile method due to the risk of ``I know it when I see it'' (IKIWISI).
+IKIWISI is when the customer does not know what she wants before she sees it.
 Our choice is also supported by the polar chart showing the development factors in Figure~\ref{fig:developmentFactors}.
 
 Secondly we are 14 members divided into four groups (as item~\ref{enum:groupSize} states), which is not handled very well in other agile methods such as XP that dictates that all the developers should be in the same room.
@@ -165,54 +166,53 @@ The features cut may then be suggested to the group of students, who are to take
 
 \subsection{Refining Scrum} 
 \label{sub:rescrum}
-As items~\ref{enum:manager}~and~\ref{enum:onsite} state in the previous section, we have neither a project manager nor an available on-site customer.
+As items~\ref{enum:manager}~and~\ref{enum:onsite} in the previous section state, we have neither a project manager nor an available on-site customer.
 We will handle the missing on-site customer by having shorter iterations and contacting the customers whenever an iteration is over.
 \Sos{}~\cite{scrumOfScrums} dictates that there should be a \scrummaster{} in each \subgroup{}.
 Since none of us have used \scrum{} before, none of us are qualified to be a \scrummaster{}.
-We are in an educational situation (see item~\ref{enum:education}) so we will strive to allow every member to try to be \scrummaster{} for a shorter time period.
+We are in an educational situation (see item~\ref{enum:education}) so we will strive to allow every member to be \scrummaster{} for some time period.
 This may not be ideal, but we consider it to be more important that every member of the \subgroup{}s tries to have the responsibility of a \scrummaster{} than having only one member trying it and learning it well.
 
 \section{Tools}\label{subsec:tools}
 A series of tools are used in the creation of this project.
 These tools are briefly described in this section.
-The tools that need to be chosen must complete some task. 
-The tasks that need tools are: Version control, bug tracking, code documentation, and testing.
+The tasks that must be handled by tools are: version control, bug tracking, code documentation, and testing.
 
 \subsection{Version Control}
-All of us have been using subversion (SVN) in previous projects as the system for version control.
+All of us have been using subversion (SVN) for version control in previous projects.
 SVN is a centralized solution~\cite{subversion} with a single repository that the group members can update from and commit changes to.
-This project does, however, differ from previous project with respect to the organization of groups; we are not one group of $x$ individuals, but rather one group consisting of some smaller \subgroup{}s.
+This project does, however, differ from previous projects with respect to the organization of groups; we are not one group of $x$ individuals, but rather one group divided into \subgroup{}s.
 This has lead us to choose a distributed solution rather than a centralized one.
 
-The solutions considered are the distributed systems Git and Mercurial (Hg).
-These systems are quite similar and the essential difference is that Hg is simpler than Git and Git is more flexible than Hg~\cite{gitVsHg}.
+The solutions considered are the distributed systems Git~\citep{githome} and Mercurial (Hg)~\citep{hghome}.
+These systems are quite similar and the main difference is that Hg is simpler than Git and Git is more flexible than Hg~\cite{gitVsHg}.
 A few of us have been using Hg and none of us have used Git, which leads us to choose Hg, such that we have a little knowledge of the chosen system.
 
 \subsection{Bug Tracking}
-We need to have some way of communicating and tracking the defects or ``bugs'' that we will run into during our project.
-The most important requirement for the tool is that it should be able to track the bugs and make them easily available to the team that will continue on this project next year.
+We need to have some way of communicating and tracking the defects or bugs that we will discover during our project.
+The most important requirement for the tool is that it should be able to track the bugs and make them easily available to the team that will continue this project next year.
 The tools considered for bug tracking are Bugzilla~\cite{bugzillaFeat} and Eventum~\cite{eventumFeat}.
-These tools are very similar in their sets of features.
+These tools are very similar in their features.
 When a bug is discovered a bug report must be added in the tool.
-In the tool the members of a team can see the bugs and their status, and mark them as fixed when they are handled.
+In the tool the members of a team can see the bugs and their status, and mark them as fixed when appropriate.
 
 Since we have used Bugzilla as part of the course Test and Verification, it will save us the overhead of having to learn a new tool by choosing that over Eventum.
-Furthermore, development of Eventum seems to be discontinued since the start of 2009~\cite{eventumDiscont}, which means that any defects that may be in the system are very unlikely to be fixed.
+Furthermore, development of Eventum seems to be discontinued since the start of 2009~\cite{eventumDiscont}, which means that any defects that may be in the system are unlikely to be fixed.
 In conclusion we choose to use Bugzilla to track our bugs.
 
 \subsection{Code Documentation}
 We do not wish to use a tool that requires us to type in documentation externally from the code.
-We want to use a tool like PHPDocumentor~\cite{phpdocumentor} or PHPXref~\cite{phpxref} to handle our documentation, since both of these read comments in the source code and use it as documentation.
+We plan to use a tool like PHPDocumentor~\cite{phpdocumentor} or PHPXref~\cite{phpxref} to handle our documentation, since both of these read comments in the source code and use it as documentation.
 This gives us the ability to write code and documentation in the same file.
-The syntax that both of these tools use is the same, which means that as long as we adhere to this syntax we can use either tool to generate documentation.
+The syntax, both of these tools use, is the same, which means that as long as we adhere to this syntax we can use either tool to generate documentation.
 
-The difference between the two tools is that the focus of PHPDocumentor to give a more diverse set of final documents (different HTML and PDF templates), where the focus of PHPXref is to have the references between classes, functions, etc.
-We use both tools such that we and the group taking over this project next year can choose the documentation they prefer.
+The difference between the two tools is that the focus of PHPDocumentor is to give a more diverse set of final documents (different HTML and PDF templates), where the focus of PHPXref is to have the references between classes, functions, etc.
+We use both tools such that we and the group continuing this project next year can choose the documentation they prefer.
 
 
 \subsection{Testing}
 \label{sub:testing}
-We want the tests to remain after our work on the project ends, in particular the groups that are to take over this project next year should be able to use our test cases again.
+We want the tests to remain after our work on the project ends, since the groups that are to take over this project next year should be able to use our test cases again.
 We will be using the built-in testing framework of Moodle \cite{moodletest}, which is based on \simpletest{} \cite{simpletest}.
-We do not consider other tools, since it reduces the number of tools we have to use by using one already part of \moodle{}.
+We do not consider other tools, since it reduces the number of tools we have to use by using one which is already a part of \moodle{}.
 This should ensure that the test cases can be used next year and be part of the final product, should it be released to the public.
